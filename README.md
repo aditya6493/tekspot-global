@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tekspot - Next.js Modular Starter
 
-## Getting Started
+Production-ready [Next.js](https://nextjs.org) starter using the latest App Router stack:
 
-First, run the development server:
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- ESLint
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project follows a feature-first modular structure:
 
-## Learn More
+```text
+src/
+  app/                    # Routing layer only (pages, layouts, route handlers)
+  config/                 # App-level config/constants
+  features/               # Business modules grouped by domain
+    home/
+      components/
+      data/
+      index.ts
+  shared/                 # Reusable cross-feature code
+    components/ui/
+    lib/
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Modular code practices
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Keep route files thin and compose page UI from `features/*`.
+2. Co-locate feature code (components, hooks, data, services) by domain.
+3. Place reusable primitives/utilities in `shared/*` only when truly generic.
+4. Avoid deep relative imports by using aliases (`@/features/*`, `@/shared/*`, etc.).
+5. Centralize app-level constants and metadata inside `config/*`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Useful scripts
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - start dev server
+- `npm run build` - build for production
+- `npm run start` - start production server
+- `npm run lint` - run ESLint
