@@ -202,39 +202,6 @@ export function MobileHeaderMenu({
                     </div>
                   </div>
 
-                  <div className="relative h-[180px] overflow-hidden px-5">
-                    <svg
-                      width="412"
-                      height="402"
-                      viewBox="0 0 412 402"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute bottom-[-40px] left-1/2 w-[412px] -translate-x-1/2 text-[#f4f4f4]"
-                    >
-                      <g clipPath="url(#clip0_205_5833)">
-                        <path d="M0 58.8457H1645.76" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M0 115.95H1645.76" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M0 173.056H1645.76" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M0 230.16H1645.76" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M0 287.264H1645.76" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M0 344.367H1645.76" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M0 0.467773V402.036" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M58.2168 0.467773V402.036" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M117.555 0.467773V402.036" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M176.891 0.467773V402.036" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M235.109 0.467773V402.036" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M294.445 0.467773V402.036" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M352.662 0.467773V402.036" stroke="#F4F4F4" strokeWidth="1.05" />
-                        <path d="M412 0.467773V402.036" stroke="#F4F4F4" strokeWidth="1.05" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_205_5833">
-                          <rect width="412" height="402" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-
                   <div className="border-t border-[#e8e8e8] p-5">
                     <a
                       className="block w-full border border-[#340c3b] bg-[#340c3b] px-4 py-3 text-center font-sans font-semibold text-[24px] text-white"

@@ -52,7 +52,7 @@ const globalOffices: Office[] = [
 
 function OfficeCard({ office }: { office: Office }) {
   return (
-    <article className="border border-black/80 bg-transparent p-4">
+    <article className="border-[0.5px] border-solid border-black/80 bg-transparent p-4">
       <h4 className="text-[20px] font-bold leading-[30px] tracking-[-0.2px] text-[#1c1c1e]">
         {office.city}
       </h4>
