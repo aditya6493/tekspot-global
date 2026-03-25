@@ -667,8 +667,20 @@ export default function AndroidCompact() {
         </div>
         <div className="content-stretch flex flex-col h-[480px] items-start justify-center overflow-clip relative shrink-0 w-full" data-name="Img" data-node-id="129:8449">
           <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10]" />
-            <div className="absolute inset-0 bg-black/50" />
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="absolute inset-0 size-full object-cover pointer-events-none"
+            >
+              <source
+                src="/assets/landing-hero-video.webm?vid=10"
+                type="video/webm"
+              />
+            </video>
+            <div className="absolute inset-0 bg-[#340c3b] opacity-50" />
           </div>
           <div className="pointer-events-none absolute inset-0 z-[3] flex items-center justify-center px-4">
             <TypewriterLoop

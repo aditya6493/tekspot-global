@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const imgLogo = "/assets/asset-009.svg";
+const imgLogo = "/assets/asset-footer-logo.png";
 const imgLinkedin = "/assets/asset-016.svg";
 const imgInstagram = "/assets/asset-002.svg";
 const imgFacebook = "/assets/asset-001.svg";
