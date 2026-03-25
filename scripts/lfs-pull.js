@@ -121,7 +121,7 @@ async function main() {
     try {
       console.log("[lfs-pull] Pulling LFS objects for `*.webm`...");
       execSync(
-        "git lfs pull --include=\"*.webm\" --exclude=\"*\" --quiet",
+        "git lfs pull --include=\"*.webm\" --exclude=\"*\"",
         { stdio: "inherit" },
       );
     } catch {
