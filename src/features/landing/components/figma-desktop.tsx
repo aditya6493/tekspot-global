@@ -74,19 +74,6 @@ export default function Component1470WDefault() {
             <div className="content-stretch flex flex-col items-center justify-center overflow-clip py-[40px] relative rounded-[8px] shrink-0 w-full" data-name="Container" data-node-id="76:6965">
               <div className="content-stretch flex flex-col h-[480px] items-start justify-center overflow-clip relative shrink-0 w-[1310px]" data-name="6981490c51c1e151d4cb9219%2F69839112fecdf86b71895059_developers-gradient_mp4.mp4" data-node-id="76:6966">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    className="absolute inset-0 size-full object-cover pointer-events-none"
-                  >
-                    <source
-                      src="/assets/landing-hero-video.webm?vid=10"
-                      type="video/webm"
-                    />
-                  </video>
                   <div className="absolute inset-0 bg-[#340c3b] opacity-50" />
                 </div>
                 <div className="pointer-events-none absolute inset-0 z-[3] flex items-center justify-center">
