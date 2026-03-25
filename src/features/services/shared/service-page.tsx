@@ -50,21 +50,7 @@ function HeroSection({ data }: { data: ServicePageData }) {
 
       {/* dark panel */}
       <div className="relative mx-4 mb-6 overflow-hidden rounded-[8px] bg-[#1c1c1e] md:mx-8 md:mb-8">
-        {/* looping background video */}
-        <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <video
-            autoPlay
-            className="absolute h-[154.53%] w-full max-w-none object-cover"
-            loop
-            muted
-            playsInline
-            poster={hero.poster}
-            preload="metadata"
-            style={{ top: "-27.27%" }}
-          >
-            <source src={hero.video} type="video/mp4" />
-          </video>
-        </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10]" />
 
         {/* content row */}
         <div className="relative z-10 flex flex-col gap-8 px-6 py-10 md:flex-row md:items-center md:gap-[48px] md:px-8 md:py-[56px] lg:gap-[80px]">
@@ -395,24 +381,11 @@ function TeamSection({ data }: { data: ServicePageData }) {
    SECTION: Dark CTA
 ═══════════════════════════════════════════════════════════════ */
 function CtaSection({ data }: { data: ServicePageData }) {
-  const { cta, hero } = data;
+  const { cta } = data;
   return (
     <section className="mx-auto mt-[80px] w-full max-w-[1374px] px-4 pt-[24px] pb-0 md:px-6">
       <div className="bg-[#1c1c1e] overflow-hidden relative rounded-[8px] px-[32px] py-[56px] lg:px-[56px]">
-        {/* reuse the same hero video for the background */}
-        <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <video
-            autoPlay
-            className="absolute h-[184%] w-full max-w-none object-cover opacity-60"
-            loop
-            muted
-            playsInline
-            preload="none"
-            style={{ top: "-42%" }}
-          >
-            <source src={hero.video} type="video/mp4" />
-          </video>
-        </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10] opacity-60" />
 
         <div className="relative z-10 flex flex-col gap-[16px] items-start">
           <p className="font-sans text-[11px] font-medium uppercase tracking-[1.5px] text-white/70">

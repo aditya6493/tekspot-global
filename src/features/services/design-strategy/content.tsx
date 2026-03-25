@@ -13,8 +13,6 @@ export const designStrategyContent: ServicePageData = {
     body: "We turn complex business challenges into clear, compelling experiences — from first research sprint to final pixel.",
     ctaPrimary:   { label: "Start a project", href: "#contact" },
     ctaSecondary: { label: "See our approach", href: "#approach" },
-    video:  "/Assets/video-2.mp4",
-    poster: "/assets/company-hero-dark-gradient.webp",
     testimonial: {
       icon:          "/assets/asset-036.png",
       badgeLabel:    "Client Story",

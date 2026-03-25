@@ -1,6 +1,3 @@
-const heroDarkGradient = "/assets/company-hero-dark-gradient.webp";
-const heroGradientVideo = "/Assets/video-4.mp4";
-
 export function CompanyHeroSection() {
   return (
     <section className="flex flex-col gap-[24px] overflow-hidden rounded-[8px] bg-white">
@@ -14,21 +11,7 @@ export function CompanyHeroSection() {
 
       {/* ── Dark gradient panel ──────────────────────────────────────── */}
       <div className="relative mx-[32px] mb-[32px] overflow-hidden rounded-[8px] bg-[#1c1c1e]">
-        {/* Background gradient video */}
-        <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <video
-            autoPlay
-            className="absolute h-[154.53%] w-full max-w-none object-cover"
-            loop
-            muted
-            playsInline
-            poster={heroDarkGradient}
-            preload="metadata"
-            style={{ top: "-27.27%" }}
-          >
-            <source src={heroGradientVideo} type="video/mp4" />
-          </video>
-        </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10]" />
 
         {/* Panel content */}
         <div className="relative z-10 flex flex-col gap-8 px-8 py-12 md:flex-row md:items-center md:gap-[48px] md:px-[32px] md:py-[56px] lg:gap-[80px]">

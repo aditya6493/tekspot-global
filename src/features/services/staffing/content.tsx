@@ -13,8 +13,6 @@ export const staffingContent: ServicePageData = {
     body: "From single specialist roles to bulk workforce ramps — we source, screen, and place talent that performs from day one.",
     ctaPrimary:   { label: "Hire now",       href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },
-    video:  "/assets/company-hero-gradient-loop.mp4",
-    poster: "/assets/company-hero-dark-gradient.webp",
     testimonial: {
       icon:          "/assets/asset-057.png",
       badgeLabel:    "Client Story",

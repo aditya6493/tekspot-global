@@ -49,10 +49,6 @@ export type ServicePageData = {
     body: string;
     ctaPrimary: { label: string; href: string };
     ctaSecondary: { label: string; href: string };
-    /** Looping background video path under /public */
-    video: string;
-    /** Poster image shown before video loads */
-    poster: string;
     testimonial: {
       /** Small icon/image next to the badge label */
       icon: string;

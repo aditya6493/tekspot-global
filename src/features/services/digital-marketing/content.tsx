@@ -13,8 +13,6 @@ export const digitalMarketingContent: ServicePageData = {
     body: "Performance campaigns, SEO, content, and lifecycle marketing — all coordinated to drive qualified pipeline and measurable revenue growth.",
     ctaPrimary:   { label: "Grow with us",   href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },
-    video:  "/Assets/video-5.mp4",
-    poster: "/assets/company-hero-dark-gradient.webp",
     testimonial: {
       icon:          "/assets/asset-014.png",
       badgeLabel:    "Client Story",

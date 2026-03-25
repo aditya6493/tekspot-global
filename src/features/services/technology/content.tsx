@@ -13,8 +13,6 @@ export const technologyContent: ServicePageData = {
     body: "Web platforms, mobile apps, APIs, and backend systems — engineered with production-grade architecture, delivered in agile sprints, and built to outlast your next funding round.",
     ctaPrimary:   { label: "Start building", href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },
-    video:  "/Assets/video-3.mp4",
-    poster: "/assets/company-hero-dark-gradient.webp",
     testimonial: {
       icon:          "/assets/asset-071.png",
       badgeLabel:    "Client Story",

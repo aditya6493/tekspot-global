@@ -3,8 +3,6 @@ import { TypewriterLoop } from "@/shared/components/typewriter-loop";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
 import Link from "next/link";
 
-const landingHeroGradientVideo = "/Assets/video-1.mp4";
-const landingHeroGradientPoster = "/assets/asset-044.jpg";
 const imgImage12 = "/assets/asset-015.png";
 const imgImage8 = "/assets/asset-074.png";
 const imgImage6 = "/assets/asset-064.png";
@@ -76,17 +74,7 @@ export default function Component1470WDefault() {
             <div className="content-stretch flex flex-col items-center justify-center overflow-clip py-[40px] relative rounded-[8px] shrink-0 w-full" data-name="Container" data-node-id="76:6965">
               <div className="content-stretch flex flex-col h-[480px] items-start justify-center overflow-clip relative shrink-0 w-[1310px]" data-name="6981490c51c1e151d4cb9219%2F69839112fecdf86b71895059_developers-gradient_mp4.mp4" data-node-id="76:6966">
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-                  <video
-                    autoPlay
-                    className="absolute h-[151.38%] left-0 max-w-none top-[-25.69%] w-full object-cover"
-                    loop
-                    muted
-                    playsInline
-                    poster={landingHeroGradientPoster}
-                    preload="metadata"
-                  >
-                    <source src={landingHeroGradientVideo} type="video/mp4" />
-                  </video>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10]" />
                   <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <div className="pointer-events-none absolute inset-0 z-[3] flex items-center justify-center">

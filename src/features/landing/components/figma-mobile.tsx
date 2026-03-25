@@ -21,8 +21,6 @@ const imgImage1 = "/assets/asset-022.png";
 const imgImage2 = "/assets/asset-072.png";
 const imgImage3 = "/assets/asset-035.png";
 const imgImage5 = "/assets/asset-030.png";
-const landingHeroGradientVideo = "/Assets/video-1.mp4";
-const landingHeroGradientPoster = "/assets/asset-067.jpg";
 const imgFrame = "/assets/asset-028.svg";
 const imgFa6BrandsLinkedin = "/assets/asset-023.svg";
 const imgMdiInstagram = "/assets/asset-065.svg";
@@ -669,17 +667,7 @@ export default function AndroidCompact() {
         </div>
         <div className="content-stretch flex flex-col h-[480px] items-start justify-center overflow-clip relative shrink-0 w-full" data-name="Img" data-node-id="129:8449">
           <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-            <video
-              autoPlay
-              className="absolute h-[151.38%] left-0 max-w-none top-[-25.69%] w-full object-cover"
-              loop
-              muted
-              playsInline
-              poster={landingHeroGradientPoster}
-              preload="metadata"
-            >
-              <source src={landingHeroGradientVideo} type="video/mp4" />
-            </video>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10]" />
             <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="pointer-events-none absolute inset-0 z-[3] flex items-center justify-center px-4">
