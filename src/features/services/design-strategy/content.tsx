@@ -75,6 +75,8 @@ export const designStrategyContent: ServicePageData = {
         Design-led thinking.<br />Business-first execution.
       </>
     ),
+    backgroundClassName: "bg-[#340c3b]",
+    useLightText: true,
     body: "We don't design in isolation. Every wireframe, prototype, and design system we create is tied to measurable outcomes — user activation, conversion rates, and retention. If the design can't be justified with data, it doesn't ship.",
     cards: [
       {
@@ -117,6 +119,8 @@ export const designStrategyContent: ServicePageData = {
     ),
     body:     "Share your goals and constraints. We handle research, wireframes, prototyping, high-fidelity design, design systems, and growth strategy — fully coordinated in one engagement.",
     ctaLabel: "Get started",
+    panelBackgroundClassName: "bg-[#340c3b]",
+    useLightText: true,
     steps: [
       { step: "01", label: "Discovery call",   desc: "Align on goals, timelines, and success metrics." },
       { step: "02", label: "Research sprint",  desc: "User interviews, audits, competitive benchmarks." },
@@ -127,6 +131,7 @@ export const designStrategyContent: ServicePageData = {
   },
 
   trust: {
+    sectionBackgroundClassName: "bg-[#340c3b]",
     body:  "Delivering design work that drives measurable outcomes across SaaS, fintech, healthcare, and retail — trusted by businesses to execute, scale, and grow with confidence.",
     image: "/assets/asset-040.png",
   },

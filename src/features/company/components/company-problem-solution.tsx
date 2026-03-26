@@ -33,7 +33,7 @@ function ProblemSolutionCard({ heading, body }: CardProps) {
 
 export function CompanyProblemSolution() {
   return (
-    <section className="flex flex-col gap-4 md:flex-row">
+    <section className="flex flex-col gap-4 rounded-[8px] bg-[#340c3b] px-4 py-16 md:flex-row md:rounded-none md:bg-transparent md:px-0 md:py-0">
       <ProblemSolutionCard
         heading="Fragmented Vendors Break Execution"
         body="Most businesses juggle separate agencies for hiring, design, marketing, and engineering. Each operates in a silo. Delivery slips. Context gets lost. Accountability becomes unclear. The overhead of coordination becomes the hidden cost of doing business."

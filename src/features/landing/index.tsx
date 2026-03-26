@@ -1,4 +1,6 @@
 import FigmaDesktopLanding from "@/features/landing/components/figma-desktop";
+import { FaqSection } from "@/features/landing/components/faq-section";
+import { LandingEngagementSections } from "@/features/landing/components/landing-engagement-sections";
 import FigmaMobileLanding from "@/features/landing/components/figma-mobile";
 import { SiteHeader } from "@/shared/components/site-header";
 
@@ -6,8 +8,8 @@ export function LandingPage() {
   return (
     <>
       <SiteHeader />
-      <div className="hidden overflow-x-clip md:block">
-        <div className="mx-auto w-[1470px]">
+      <div className="hidden md:block">
+        <div className="mx-auto w-[1470px] max-w-full">
           <FigmaDesktopLanding />
         </div>
       </div>
@@ -16,6 +18,8 @@ export function LandingPage() {
           <FigmaMobileLanding />
         </div>
       </div>
+      <LandingEngagementSections />
+      <FaqSection />
     </>
   );
 }

@@ -1,4 +1,6 @@
 
+import { LandingHowWeWorkSection } from "@/features/landing/components/landing-engagement-sections";
+import { TrustBandSection } from "@/features/services/shared/trust-band-section";
 import { TypewriterLoop } from "@/shared/components/typewriter-loop";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
 import Link from "next/link";
@@ -15,8 +17,6 @@ const imgImage15 = "/assets/asset-060.png";
 const img6981490C51C1E151D4Cb92192F69839085Edb11A12B2Ad6A95BlockerGradientMp4Mp4 = "/assets/asset-063.jpg";
 const img6981490C51C1E151D4Cb92192F69839085Edb11A12B2Ad6A95BlockerGradientMp4Mp5 = "/assets/asset-021.jpg";
 const imgEllipse1 = "/assets/asset-053.png";
-const imgStar = "/assets/asset-055.png";
-const imgImg = "/assets/asset-040.png";
 const imgImage1 = "/assets/asset-022.png";
 const imgImage2 = "/assets/asset-072.png";
 const imgImage3 = "/assets/asset-035.png";
@@ -26,11 +26,8 @@ const imgFa6BrandsLinkedin = "/assets/asset-023.svg";
 const imgMdiInstagram = "/assets/asset-065.svg";
 const imgIcRoundFacebook = "/assets/asset-018.svg";
 const imgMaterialSymbolsLightDirectionsOutlineSharp = "/assets/asset-042.svg";
-const imgLine1 = "/assets/asset-029.svg";
 const imgChevron = "/assets/asset-033.svg";
 const imgChevron1 = "/assets/asset-012.svg";
-const imgGrid = "/assets/asset-008.svg";
-const img9 = "/assets/asset-005.svg";
 const imgChevron2 = "/assets/asset-038.svg";
 const imgGrid1 = "/assets/asset-037.svg";
 
@@ -48,8 +45,8 @@ const trustLeaderCards = [
 
 export default function AndroidCompact() {
   return (
-    <div className="bg-white h-[6221px] overflow-x-clip relative w-full" data-name="Android Compact - 1" data-node-id="129:7835">
-      <div className="hidden absolute bg-[#f5f5f5] content-stretch flex flex-col h-[2071px] items-start left-0 px-[16px] py-[24px] top-[6221px] w-full" data-name="Footer" data-node-id="129:9148">
+    <div className="bg-white h-[7180px] overflow-x-clip relative w-full" data-name="Android Compact - 1" data-node-id="129:7835">
+      <div className="hidden absolute bg-[#f5f5f5] content-stretch flex flex-col h-[2071px] items-start left-0 px-[16px] py-[24px] top-[7180px] w-full" data-name="Footer" data-node-id="129:9148">
         <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="129:9149">
           <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full" data-name="Container" data-node-id="129:9150">
             <div className="content-stretch flex flex-col gap-[12px] items-center justify-center py-[24px] relative shrink-0 w-full" data-name="Container" data-node-id="129:9151">
@@ -255,161 +252,6 @@ export default function AndroidCompact() {
           </div>
         </div>
       </div>
-      <div className="absolute border border-black border-solid content-stretch flex flex-col gap-[32px] h-[1412px] items-center justify-center left-[16px] px-[8px] py-[32px] top-[4769px] w-[calc(100%-32px)]" data-name="Contact" data-node-id="129:8705">
-        <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="129:8706">
-          <div className="content-stretch flex flex-col gap-[24px] items-start px-[12px] relative shrink-0 w-full" data-name="Container" data-node-id="129:8707">
-            <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#340c3b] text-[15px] tracking-[2px] uppercase whitespace-nowrap" data-node-id="129:8708">
-              <p className="leading-[22.13px]">Ready to get started?</p>
-            </div>
-            <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="129:8709">
-              <div className="content-stretch flex flex-col items-start pr-[19.55px] relative shrink-0 w-full" data-name="Heading 2" data-node-id="129:8710">
-                <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[32px] text-black tracking-[-0.8px] w-full" data-node-id="129:8711">
-                  <p className="leading-[44px]">Let’s bring some clarity to your business numbers</p>
-                </div>
-              </div>
-              <div className="flex flex-col font-sans font-light justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" data-node-id="129:8712">
-                <p className="leading-[1.4]">Fill in your details and let’s talk about the clarity your business needs.</p>
-              </div>
-            </div>
-          </div>
-          <div className="content-stretch flex flex-col items-start p-[8px] relative shrink-0 w-full" data-node-id="129:8713">
-            <div className="content-stretch flex flex-col gap-[20px] items-start justify-center relative shrink-0 w-full" data-node-id="129:8714">
-              <div className="content-stretch flex flex-col h-[105.25px] items-start justify-center pb-[20px] relative shrink-0 w-full" data-name="Margin" data-node-id="129:8715">
-                <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pb-[0.01px] relative w-full" data-name="Container" data-node-id="129:8716">
-                  <div className="content-stretch flex flex-col items-start mb-[-0.01px] pb-[5px] relative shrink-0 w-full" data-name="Container" data-node-id="129:8717">
-                    <div className="flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full" data-node-id="129:8718">
-                      <p>
-                        <span className="font-sans leading-[22.13px]">{`Name `}</span>
-                        <span className="font-sans leading-[22.13px] text-[#340c3b]">*</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex h-[70.25px] items-start justify-center mb-[-0.01px] relative shrink-0 w-full" data-name="Fieldset" data-node-id="129:8719">
-                    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pb-[0.75px] relative self-stretch" data-name="Container" data-node-id="129:8720">
-                      <div className="bg-white border border-[#7d7d7d] border-solid h-[48px] mb-[-0.75px] min-h-[36px] shrink-0 w-full" data-name="Input" data-node-id="129:8721" />
-                      <div className="content-stretch flex flex-col items-start mb-[-0.75px] relative shrink-0 w-full" data-name="Container" data-node-id="129:8722">
-                        <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#667085] text-[11px] w-full" data-node-id="129:8723">
-                          <p className="leading-[22.13px]">First Name</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col h-[105.25px] items-start justify-center pb-[20px] relative shrink-0 w-full" data-name="Margin" data-node-id="129:8724">
-                <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pb-[0.01px] relative w-full" data-name="Container" data-node-id="129:8725">
-                  <div className="content-stretch flex flex-col items-start mb-[-0.01px] pb-[5px] relative shrink-0 w-full" data-name="Label" data-node-id="129:8726">
-                    <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-black w-full" data-node-id="129:8727">
-                      <p className="leading-[22.13px]">Business name</p>
-                    </div>
-                  </div>
-                  <div className="bg-white border border-[#7d7d7d] border-solid h-[48px] mb-[-0.01px] min-h-[36px] shrink-0 w-full" data-name="Input" data-node-id="129:8728" />
-                </div>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-col gap-[20px] items-start justify-center relative shrink-0 w-full" data-node-id="129:8729">
-              <div className="content-stretch flex flex-col h-[83.13px] items-start justify-center pb-[20px] relative shrink-0 w-full" data-name="Margin" data-node-id="129:8730">
-                <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pb-[0.01px] relative w-full" data-name="Container" data-node-id="129:8731">
-                  <div className="content-stretch flex flex-col items-start mb-[-0.01px] pb-[5px] relative shrink-0 w-full" data-name="Label" data-node-id="129:8732">
-                    <div className="flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full" data-node-id="129:8733">
-                      <p>
-                        <span className="font-sans leading-[22.13px]">{`Email `}</span>
-                        <span className="font-sans leading-[22.13px] text-[#340c3b]">*</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="bg-white border border-[#7d7d7d] border-solid h-[48px] mb-[-0.01px] min-h-[36px] shrink-0 w-full" data-name="Input" data-node-id="129:8734" />
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col h-[83.13px] items-start justify-center pb-[20px] relative shrink-0 w-full" data-name="Margin" data-node-id="129:8735">
-                <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pb-[0.01px] relative w-full" data-name="Container" data-node-id="129:8736">
-                  <div className="content-stretch flex flex-col items-start mb-[-0.01px] pb-[5px] relative shrink-0 w-full" data-name="Label" data-node-id="129:8737">
-                    <div className="flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full" data-node-id="129:8738">
-                      <p>
-                        <span className="leading-[22.13px]">{`Phone `}</span>
-                        <span className="font-sans leading-[22.13px] not-italic text-[#340c3b]">*</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="bg-white border border-[#7d7d7d] border-solid h-[48px] mb-[-0.01px] min-h-[36px] shrink-0 w-full" data-name="Input" data-node-id="129:8739" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="h-0 relative shrink-0 w-full" data-node-id="129:8740">
-          <div className="absolute inset-[-1px_0_0_0]">
-            <img alt="" className="block max-w-none size-full" src={imgLine1} />
-          </div>
-        </div>
-        <div className="content-stretch flex flex-col gap-[24px] items-start p-[8px] relative shrink-0 w-full" data-node-id="129:8741">
-          <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" data-node-id="129:8742">
-            <p className="leading-[22.13px]">What are you most interested in?</p>
-          </div>
-          <div className="content-stretch flex flex-col gap-[24px] items-start justify-center relative shrink-0 w-full" data-node-id="129:8743">
-            <div className="content-stretch flex gap-[4px] items-end relative shrink-0" data-node-id="129:8744">
-              <div className="bg-white border border-[#340c3b] border-solid rounded-[8px] shrink-0 size-[16px]" data-name="Input" data-node-id="129:8745" />
-              <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#1d2939] text-[16px] whitespace-nowrap" data-node-id="129:8746">
-                <p className="leading-[16.9px]">Talent/staffing/hiring</p>
-              </div>
-            </div>
-            <div className="content-stretch flex gap-[4px] items-end relative shrink-0" data-node-id="129:8747">
-              <div className="bg-white border border-[#340c3b] border-solid rounded-[8px] shrink-0 size-[16px]" data-name="Input" data-node-id="129:8748" />
-              <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#1d2939] text-[16px] whitespace-nowrap" data-node-id="129:8749">
-                <p className="leading-[16.9px]">{`Design & Strategy`}</p>
-              </div>
-            </div>
-            <div className="content-stretch flex gap-[4px] items-end relative shrink-0" data-node-id="129:8750">
-              <div className="bg-white border border-[#340c3b] border-solid rounded-[8px] shrink-0 size-[16px]" data-name="Input" data-node-id="129:8751" />
-              <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#1d2939] text-[16px] whitespace-nowrap" data-node-id="129:8752">
-                <p className="leading-[16.9px]">Digital marketing</p>
-              </div>
-            </div>
-            <div className="content-stretch flex gap-[4px] items-end relative shrink-0" data-node-id="129:8753">
-              <div className="bg-white border border-[#340c3b] border-solid rounded-[8px] shrink-0 size-[16px]" data-name="Input" data-node-id="129:8754" />
-              <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#1d2939] text-[16px] whitespace-nowrap" data-node-id="129:8755">
-                <p className="leading-[16.9px]">{`Web & App developement`}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="h-0 relative shrink-0 w-full" data-node-id="129:8756">
-          <div className="absolute inset-[-1px_0_0_0]">
-            <img alt="" className="block max-w-none size-full" src={imgLine1} />
-          </div>
-        </div>
-        <div className="content-stretch flex flex-col gap-[16px] items-start p-[8px] relative shrink-0 w-full" data-node-id="129:8757">
-          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="129:8758">
-            <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" data-node-id="129:8759">
-              <p className="leading-[1.4]">Sign up to our newsletter</p>
-            </div>
-          </div>
-          <div className="content-stretch flex gap-[8px] items-start relative shrink-0 w-full" data-name="Group → Label" data-node-id="129:8760">
-            <div className="bg-white border border-[#340c3b] border-solid shrink-0 size-[16px]" data-name="Input" data-node-id="129:8761" />
-            <div className="flex flex-[1_0_0] flex-col font-sans font-normal justify-center leading-[0] min-h-px min-w-px relative text-[#1d2939] text-[16px]" data-node-id="129:8762">
-              <p className="leading-[16.9px]">Send me insights, tools and tips to help my business grow smarter.</p>
-            </div>
-          </div>
-          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="129:8763">
-            <div className="flex flex-col font-sans font-normal justify-center leading-[0] min-w-full relative shrink-0 text-[#667085] text-[14px] w-[min-content]" data-node-id="129:8764">
-              <p className="leading-[22.13px]">{`For more information on how we process your data for marketing communication, check our `}</p>
-            </div>
-            <div className="content-stretch flex items-start relative shrink-0" data-name="Component 13" data-node-id="129:8765">
-              <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#340c3b] text-[11px] whitespace-nowrap" data-node-id="129:8766">
-                <p className="leading-[22.13px]">Privacy Policy</p>
-              </div>
-            </div>
-            <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#667085] text-[11px] whitespace-nowrap" data-node-id="129:8767">
-              <p className="leading-[22.13px]">.</p>
-            </div>
-          </div>
-        </div>
-        <div className="bg-white border border-[#ae7cb6] border-solid content-stretch flex flex-col h-[48px] items-center justify-center px-[17px] py-[9px] relative shadow-[-4px_6px_0px_0px_#ae7cb6] shrink-0 w-[242px]" data-name="Component" data-node-id="129:8768">
-          <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[#202124] text-[16px] text-center whitespace-nowrap" data-node-id="129:8769">
-            <p className="leading-[normal]">Submit</p>
-          </div>
-        </div>
-      </div>
       <div className="absolute content-stretch flex flex-col items-start left-0 px-[18px] py-[6px] top-[742px] w-full" data-name="Clients" data-node-id="129:8452">
         <div className="content-stretch flex flex-col gap-[24px] items-center overflow-clip py-[30px] relative shrink-0 w-full" data-name="Section" data-node-id="129:8453">
           <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="title" data-node-id="129:8454">
@@ -438,8 +280,24 @@ export default function AndroidCompact() {
           </div>
         </div>
       </div>
-      <div className="absolute content-stretch flex flex-col gap-[40px] items-center left-0 top-[3686px] w-full" data-name="Client" data-node-id="129:8701">
-        <div className="bg-[#1c1c1e] content-stretch flex flex-col items-start overflow-clip px-[32px] py-[56px] relative shrink-0 w-full" data-name="Section" data-node-id="129:8629">
+      <div className="absolute content-stretch flex flex-col gap-[40px] items-center left-0 top-[6130px] w-full" data-name="Client" data-node-id="129:8701">
+        <div className="-mt-[64px] content-stretch flex flex-col gap-[8px] items-start px-[24px] relative shrink-0 w-full" data-node-id="129:8700">
+          <div className="content-stretch flex flex-col items-start justify-end relative shrink-0 w-full" data-name="Container" data-node-id="129:8692">
+            <div className="content-stretch flex flex-col items-start pr-[67.9px] relative shrink-0 w-full" data-name="Heading 2" data-node-id="129:8693">
+              <div className="flex flex-col font-sans font-bold justify-center leading-[0] relative shrink-0 text-[#1c1c1e] text-[32px] tracking-[-0.48px] whitespace-nowrap" data-node-id="129:8694">
+                <p className="leading-[1.15]">What our clients says</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[379px]" data-name="Container" data-node-id="129:8695">
+              <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[#7d7d7d] text-[18px] w-full" data-node-id="129:8696">
+                <p className="leading-[1.5]">Your whole firm communicates with confidence. Issues get fixed at the source. Compliance focuses on what matters.</p>
+              </div>
+            </div>
+            <div className="h-[48px] shrink-0 w-full" data-name="Rectangle" data-node-id="129:8697" />
+          </div>
+          <LandingTestimonialSlider variant="mobile" />
+        </div>
+        <div className="mt-[80px] bg-[#1c1c1e] content-stretch flex flex-col items-start overflow-clip px-[32px] py-[56px] relative shrink-0 w-full" data-name="Section" data-node-id="129:8629">
           <div className="-translate-y-1/2 absolute h-[524px] left-0 overflow-clip right-[-10.92%] top-[calc(50%+13.5px)]" data-name="Container" data-node-id="129:8630">
             <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex flex-col h-[468px] items-start justify-center left-[calc(50%+18.5px)] overflow-clip top-[calc(50%-15px)] w-[1428px]" data-name="6981490c51c1e151d4cb9219%2F69839085edb11a12b2ad6a95_blocker-gradient_mp4.mp4" data-node-id="129:8631">
               <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
@@ -475,67 +333,40 @@ export default function AndroidCompact() {
             </div>
           </div>
         </div>
-        <div className="content-stretch flex flex-col gap-[8px] items-start px-[24px] relative shrink-0 w-full" data-node-id="129:8700">
-          <div className="content-stretch flex flex-col items-start justify-end relative shrink-0 w-full" data-name="Container" data-node-id="129:8692">
-            <div className="content-stretch flex flex-col items-start pr-[67.9px] relative shrink-0 w-full" data-name="Heading 2" data-node-id="129:8693">
-              <div className="flex flex-col font-sans font-bold justify-center leading-[0] relative shrink-0 text-[#1c1c1e] text-[32px] tracking-[-0.48px] whitespace-nowrap" data-node-id="129:8694">
-                <p className="leading-[1.15]">What our clients says</p>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[379px]" data-name="Container" data-node-id="129:8695">
-              <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[#7d7d7d] text-[18px] w-full" data-node-id="129:8696">
-                <p className="leading-[1.5]">Your whole firm communicates with confidence. Issues get fixed at the source. Compliance focuses on what matters.</p>
-              </div>
-            </div>
-            <div className="h-[48px] shrink-0 w-full" data-name="Rectangle" data-node-id="129:8697" />
-          </div>
-          <LandingTestimonialSlider variant="mobile" />
-        </div>
       </div>
-      <div className="absolute content-stretch flex flex-col gap-[24px] h-[572px] items-center justify-center left-0 top-[3082px] w-full" data-name="trust" data-node-id="129:8627">
-        <div className="absolute h-[402px] left-0 top-0 w-full" data-name="Grid" data-node-id="129:8581">
-          <img alt="" className="absolute block max-w-none size-full" src={imgGrid} />
-        </div>
-        <div className="content-stretch flex flex-col items-start px-[24px] relative shrink-0 w-full" data-name="Text" data-node-id="129:8617">
-          <div className="content-stretch flex flex-col gap-[16px] items-start justify-center py-[16px] relative shrink-0 w-full" data-name="Heading 2" data-node-id="129:8618">
-            <div className="h-[71.72px] relative shrink-0 w-[101.911px]" data-name="9+" data-node-id="129:8619">
-              <img alt="" className="absolute block max-w-none size-full" src={img9} />
-            </div>
-            <div className="flex flex-col font-sans font-bold justify-center leading-[0] relative shrink-0 text-[#1c1c1e] text-[32px] tracking-[-0.48px] whitespace-nowrap" data-node-id="129:8620">
-              <p className="leading-[1.4]">years of trust</p>
-            </div>
-            <div className="absolute left-[155px] size-[104px] top-[8.94px]" data-name="Star" data-node-id="129:8621">
-              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStar} />
-            </div>
-          </div>
-          <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[341px]" data-name="Container" data-node-id="129:8622">
-            <div className="flex flex-col font-sans font-light justify-center leading-[0] relative shrink-0 text-[#7d7d7d] text-[18px] w-full" data-node-id="129:8623">
-              <p className="leading-[27px]">Delivering consistent results across design, marketing, and staffing — trusted by businesses to execute, scale, and grow with confidence.</p>
-            </div>
-          </div>
-        </div>
-        <div className="content-stretch flex flex-col h-[275.155px] items-center justify-center relative shrink-0 w-[282px]" data-name="Img" data-node-id="129:8624">
-          <div className="h-[275.155px] relative shrink-0 w-full" data-name="Img" data-node-id="129:8625">
-            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImg} />
-          </div>
-        </div>
+      <div
+        className="absolute left-0 top-[3082px] flex w-full flex-col"
+        data-name="How we work and trust"
+        data-node-id="129:8627"
+      >
+        <LandingHowWeWorkSection />
+        <TrustBandSection
+          sectionBackgroundClassName="bg-[#340c3b]"
+          body="Placing talent across technology, operations, marketing, and design — trusted by businesses that can't afford bad hires and won't accept slow ones."
+          image="/assets/asset-040.png"
+        />
       </div>
-      <div id="what-we-do" className="scroll-mt-[140px] absolute bg-white content-stretch flex flex-col items-start left-0 overflow-clip px-[24px] py-[32px] top-[963px] w-full" data-name="Section" data-node-id="129:8477">
-        <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-[364px]" data-name="Container" data-node-id="129:8478">
-          <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="129:8479">
+      <div
+        id="what-we-do"
+        className="scroll-mt-[140px] absolute inset-x-0 top-[963px] flex flex-col items-start overflow-x-clip bg-[#340c3b] px-4 py-14"
+        data-name="Section"
+        data-node-id="129:8477"
+      >
+        <div className="mx-auto flex w-full max-w-[1374px] flex-col gap-8">
+          <div className="flex flex-col gap-4">
             <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 2" data-node-id="129:8480">
-              <div className="flex flex-col font-sans font-bold justify-center leading-[0] relative shrink-0 text-[#1c1c1e] text-[32px] tracking-[-0.48px] w-full" data-node-id="129:8481">
+              <div className="flex flex-col font-sans font-bold justify-center leading-[0] relative shrink-0 text-[32px] text-white tracking-[-0.48px] w-full" data-node-id="129:8481">
                 <p className="leading-[57.6px]">What we do</p>
               </div>
             </div>
-            <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[#7d7d7d] text-[20px] w-[339px]" data-node-id="129:8482">
+            <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-white/80 w-full" data-node-id="129:8482">
               <p className="leading-[27px]">From building teams to driving growth and delivering digital products — we bring everything together to help your business scale faster.</p>
             </div>
           </div>
-          <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="129:8483">
+          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="129:8483">
             <Link
               href="/services/staffing"
-              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full"
+              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full sticky top-[80px] z-[1]"
               data-name="Component 3"
               data-node-id="129:8484"
             >
@@ -564,7 +395,7 @@ export default function AndroidCompact() {
             </Link>
             <Link
               href="/services/design-strategy"
-              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full"
+              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full sticky top-[80px] z-[2] mt-[40px]"
               data-name="Component 4"
               data-node-id="129:8496"
             >
@@ -593,7 +424,7 @@ export default function AndroidCompact() {
             </Link>
             <Link
               href="/services/digital-marketing"
-              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full"
+              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full sticky top-[80px] z-[3] mt-[40px]"
               data-name="Component 5"
               data-node-id="129:8508"
             >
@@ -624,7 +455,7 @@ export default function AndroidCompact() {
                 </div>
               </div>
             </Link>
-            <div className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full" data-name="Component 7" data-node-id="129:8520">
+            <div className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full sticky top-[80px] z-[4] mt-[40px]" data-name="Component 7" data-node-id="129:8520">
               <div className="content-stretch flex flex-col items-end relative shrink-0 w-full" data-node-id="129:8521">
                 <div className="h-[32px] relative shrink-0 w-[32.667px]" data-name="Chevron" data-node-id="129:8522">
                   <img alt="" className="absolute block max-w-none size-full" src={imgChevron2} />

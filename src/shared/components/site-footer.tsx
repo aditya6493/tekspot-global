@@ -105,12 +105,7 @@ export function SiteFooter() {
           </div>
 
           <div className="px-6 py-10">
-            <div className="flex flex-wrap items-center justify-center gap-6 text-[16px] leading-[24px] text-white/80 md:gap-12">
-              <Link href="/#what-we-do">Services</Link>
-              <Link href="/services/staffing">Staffing</Link>
-              <Link href="/services/design-strategy">Design &amp; Strategy</Link>
-              <Link href="/services/digital-marketing">Digital Marketing</Link>
-              <Link href="/services/technology">Technology</Link>
+            <div className="flex flex-wrap items-start justify-start gap-6 text-left text-[16px] leading-[24px] text-white/80 md:gap-12">
               <Link href="/company">Company</Link>
               <Link href="/careers">Careers</Link>
               <span>Contact</span>

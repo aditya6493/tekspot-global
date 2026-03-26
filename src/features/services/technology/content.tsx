@@ -75,6 +75,8 @@ export const technologyContent: ServicePageData = {
         Engineering excellence.<br />Commercial accountability.
       </>
     ),
+    backgroundClassName: "bg-[#340c3b]",
+    useLightText: true,
     body: "We don't just write code. We own outcomes. Every sprint is tied to a milestone, every milestone to a business objective. If the architecture we design today creates problems in 18 months, that's our problem too.",
     cards: [
       {
@@ -117,6 +119,8 @@ export const technologyContent: ServicePageData = {
     ),
     body:     "Share your product vision, technical requirements, and timeline. We handle architecture design, frontend, backend, mobile, APIs, QA, and deployment — fully owned in one engagement.",
     ctaLabel: "Start building",
+    panelBackgroundClassName: "bg-[#340c3b]",
+    useLightText: true,
     steps: [
       { step: "01", label: "Technical discovery",  desc: "Understand your stack, requirements, integrations, and non-functional requirements." },
       { step: "02", label: "Architecture & planning", desc: "System design, tech stack decisions, sprint planning, and milestone mapping." },
@@ -127,6 +131,7 @@ export const technologyContent: ServicePageData = {
   },
 
   trust: {
+    sectionBackgroundClassName: "bg-[#340c3b]",
     body:  "Delivering technology products for SaaS, fintech, healthcare, and retail businesses — trusted by engineering teams that need quality delivery and CTOs who need predictable timelines.",
     image: "/assets/asset-040.png",
   },

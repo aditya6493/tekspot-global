@@ -282,7 +282,7 @@ export function DesktopSiteHeader() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white border border-[#340c3b] border-solid content-stretch flex gap-[8px] h-[48px] items-center justify-center overflow-clip p-[17px] relative shadow-[-4px_6px_0px_0px_#ae7cb6] shrink-0">
+              <div className="bg-white border border-[#ae7cb6] border-solid content-stretch flex gap-[8px] h-[48px] items-center justify-center overflow-clip p-[17px] relative shadow-[-4px_6px_0px_0px_#ae7cb6] shrink-0">
                 <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[#340c3b] text-[16px] tracking-[-0.12px] whitespace-nowrap">
                   <p className="leading-[12px]">Contact us</p>
                 </div>

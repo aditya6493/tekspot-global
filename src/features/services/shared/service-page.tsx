@@ -2,15 +2,13 @@
 
 import { useRef, useState } from "react";
 import type { ServicePageData, ServiceTestimonial } from "./types";
+import { TrustBandSection } from "./trust-band-section";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
 
 /* ─── shared static assets ───────────────────────────────────── */
 const imgAvatar      = "/assets/asset-069.png";
 const imgChevronPrev = "/assets/asset-025.svg";
 const imgChevronNext = "/assets/asset-031.svg";
-const imgStar        = "/assets/asset-006.svg";
-const imgHandshake   = "/assets/asset-040.png";
-
 // Trust-from-leaders logos (same as landing page)
 const imgImage12 = "/assets/asset-015.png";
 const imgImage8  = "/assets/asset-074.png";
@@ -153,20 +151,24 @@ function DeliverablesSection({ data }: { data: ServicePageData }) {
 ═══════════════════════════════════════════════════════════════ */
 function ApproachSection({ data }: { data: ServicePageData }) {
   const { approach } = data;
+  const sectionBgClass = approach.backgroundClassName ?? "bg-[#f7f7f7]";
+  const eyebrowTextClass = approach.useLightText ? "text-white/70" : "text-[#7d7d7d]";
+  const headingTextClass = approach.useLightText ? "text-white" : "text-[#1c1c1e]";
+  const bodyTextClass = approach.useLightText ? "text-white/80" : "text-[#7d7d7d]";
   return (
-    <section className="bg-[#f7f7f7] py-[64px] md:py-[80px]" id="approach">
+    <section className={`${sectionBgClass} py-[64px] md:py-[80px]`} id="approach">
       <div className="mx-auto w-full max-w-[1374px] px-4 md:px-6">
         <div className="flex flex-col gap-[48px] lg:flex-row lg:gap-[80px] lg:items-start">
           {/* left */}
           <div className="flex flex-col gap-[16px] items-start lg:max-w-[490px] lg:sticky lg:top-[120px]">
-            <p className="font-sans text-[#7d7d7d] text-[14px] uppercase tracking-[1px] leading-[27px]">
+            <p className={`font-sans text-[14px] uppercase tracking-[1px] leading-[27px] ${eyebrowTextClass}`}>
               {approach.eyebrow}
             </p>
-            <h2 className="font-sans text-[#1c1c1e] text-[36px] lg:text-[46px] tracking-[-0.48px] leading-[1.18]">
+            <h2 className={`font-sans text-[36px] lg:text-[46px] tracking-[-0.48px] leading-[1.18] ${headingTextClass}`}>
               {approach.heading}
             </h2>
             <div className="h-[16px]" />
-            <p className="font-sans text-[#7d7d7d] text-[17px] lg:text-[18px] leading-[27px]">
+            <p className={`font-sans text-[17px] lg:text-[18px] leading-[27px] ${bodyTextClass}`}>
               {approach.body}
             </p>
           </div>
@@ -203,6 +205,11 @@ function ApproachSection({ data }: { data: ServicePageData }) {
 ═══════════════════════════════════════════════════════════════ */
 function ProcessSection({ data }: { data: ServicePageData }) {
   const { process } = data;
+  const processPanelBgClass = process.panelBackgroundClassName ?? "bg-[#f7f7f7]";
+  const stepBorderClass = process.useLightText ? "border-white/20" : "border-[#ddd]";
+  const stepNumberClass = process.useLightText ? "text-[#d7b4e0]" : "text-[#ae7cb6]";
+  const stepLabelClass = process.useLightText ? "text-white" : "text-[#1c1c1e]";
+  const stepDescClass = process.useLightText ? "text-white/80" : "text-[#7d7d7d]";
   return (
     <section className="bg-white overflow-hidden py-[64px] md:py-[80px]">
       <div className="mx-auto w-full max-w-[1374px] px-4 md:px-6">
@@ -234,22 +241,22 @@ function ProcessSection({ data }: { data: ServicePageData }) {
 
           {/* right */}
           <div className="flex flex-1 flex-col">
-            <div className="bg-[#f7f7f7] overflow-hidden">
+            <div className={`${processPanelBgClass} overflow-hidden`}>
               {process.steps.map((step, i) => (
                 <div
                   key={step.step}
                   className={`flex items-start gap-[20px] px-[28px] py-[24px] ${
-                    i < process.steps.length - 1 ? "border-b border-[#ddd]" : ""
+                    i < process.steps.length - 1 ? `border-b ${stepBorderClass}` : ""
                   }`}
                 >
-                  <span className="font-sans font-semibold text-[#ae7cb6] text-[13px] tracking-[1px] shrink-0 mt-0.5">
+                  <span className={`font-sans font-semibold text-[13px] tracking-[1px] shrink-0 mt-0.5 ${stepNumberClass}`}>
                     {step.step}
                   </span>
                   <div className="flex flex-col gap-[4px]">
-                    <p className="font-sans font-medium text-[#1c1c1e] text-[17px] leading-[1.3]">
+                    <p className={`font-sans font-medium text-[17px] leading-[1.3] ${stepLabelClass}`}>
                       {step.label}
                     </p>
-                    <p className="font-sans text-[#7d7d7d] text-[14px] leading-[22px]">
+                    <p className={`font-sans text-[14px] leading-[22px] ${stepDescClass}`}>
                       {step.desc}
                     </p>
                   </div>
@@ -281,48 +288,11 @@ function ProcessSection({ data }: { data: ServicePageData }) {
 function TrustSection({ data }: { data: ServicePageData }) {
   const { trust } = data;
   return (
-    <section className="bg-[#f7f7f7] py-[64px] md:py-[80px]">
-      <div className="mx-auto w-full max-w-[1374px] px-4 md:px-6">
-        <div className="relative flex flex-col gap-[40px] rounded-[8px] bg-white p-[34px] lg:flex-row lg:gap-[80px] lg:items-center lg:pl-[200px] lg:pr-[120px]">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 rounded-[8px] opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(#340c3b 1px,transparent 1px),linear-gradient(90deg,#340c3b 1px,transparent 1px)",
-              backgroundSize: "56px 56px",
-            }}
-          />
-
-          {/* left */}
-          <div className="relative flex flex-col gap-[16px] items-start lg:max-w-[520px]">
-            <div className="absolute -top-10 left-[260px] size-[100px] pointer-events-none opacity-60">
-              <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgStar} />
-            </div>
-            <div className="font-sans font-bold text-[#1c1c1e] text-[80px] lg:text-[96px] tracking-[-2px] leading-[0.9]">
-              9+
-            </div>
-            <p className="font-sans font-bold text-[#1c1c1e] text-[36px] lg:text-[48px] tracking-[-0.48px] leading-[1.1]">
-              years of trust
-            </p>
-            <p className="font-sans font-light text-[#7d7d7d] text-[16px] lg:text-[18px] leading-[27px] max-w-[440px]">
-              {trust.body}
-            </p>
-          </div>
-
-          {/* right */}
-          <div className="relative flex flex-1 items-center justify-center lg:justify-end">
-            <div className="relative h-[280px] lg:h-[360px] w-full max-w-[500px]">
-              <img
-                alt="Trust illustration"
-                className="absolute inset-0 max-w-none object-contain size-full"
-                src={trust.image}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <TrustBandSection
+      body={trust.body}
+      image={trust.image}
+      sectionBackgroundClassName={trust.sectionBackgroundClassName}
+    />
   );
 }
 

@@ -68,6 +68,10 @@ export type ServicePageData = {
     eyebrow: string;
     heading: ReactNode;
     body: string;
+    /** Optional section background utility class (defaults to light gray) */
+    backgroundClassName?: string;
+    /** Set true when using a dark background to keep text readable */
+    useLightText?: boolean;
     cards: ServiceApproachCard[];
   };
 
@@ -75,6 +79,10 @@ export type ServicePageData = {
     heading: ReactNode;
     body: string;
     ctaLabel: string;
+    /** Optional step-panel background utility class (defaults to light gray) */
+    panelBackgroundClassName?: string;
+    /** Set true when using a dark panel background to keep step text readable */
+    useLightText?: boolean;
     steps: ServiceProcessStep[];
     /** Capability tags rendered as pills */
     tags: string[];
@@ -82,6 +90,8 @@ export type ServicePageData = {
 
   trust: {
     body: string;
+    /** Optional section background utility class (defaults to light gray) */
+    sectionBackgroundClassName?: string;
     /** Image shown on the right side of the trust section */
     image: string;
   };

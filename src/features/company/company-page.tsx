@@ -94,7 +94,7 @@ export function CompanyPage() {
           </section>
 
           {/* ── CTA ── */}
-          <section className="rounded-[8px] border border-[#ae7cb6]/45 bg-white p-8 shadow-[-8px_10px_0px_0px_#ae7cb6] lg:p-10">
+          <section className="rounded-none border border-[#ae7cb6]/45 bg-white p-8 shadow-[-8px_10px_0px_0px_#ae7cb6] lg:p-10">
             <h2 className="text-3xl font-semibold tracking-[-0.02em]">Partner with Tekspot</h2>
             <p className="mt-3 max-w-3xl text-[17px] leading-8 text-[#555]">
               Whether you need hiring, product execution, growth, or engineering scale, we can structure a delivery model that fits your business goals.

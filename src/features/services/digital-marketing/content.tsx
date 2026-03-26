@@ -75,6 +75,8 @@ export const digitalMarketingContent: ServicePageData = {
         Spend less.<br />Earn more.<br />Measure everything.
       </>
     ),
+    backgroundClassName: "bg-[#340c3b]",
+    useLightText: true,
     body: "We don't run campaigns in isolation. Every channel, every creative, every landing page is part of a connected growth system — measured at the level of pipeline contribution and revenue, not traffic and clicks.",
     cards: [
       {
@@ -117,6 +119,8 @@ export const digitalMarketingContent: ServicePageData = {
     ),
     body:     "Share your revenue targets and current marketing state. We handle channel strategy, campaign execution, content, SEO, and lifecycle automation — coordinated in one growth programme you can see working.",
     ctaLabel: "Get started",
+    panelBackgroundClassName: "bg-[#340c3b]",
+    useLightText: true,
     steps: [
       { step: "01", label: "Marketing audit",        desc: "Analyse current channels, attribution, spend efficiency, and competitive position." },
       { step: "02", label: "Strategy & roadmap",     desc: "Channel mix, budget allocation, messaging framework, and quarterly OKRs." },
@@ -127,6 +131,7 @@ export const digitalMarketingContent: ServicePageData = {
   },
 
   trust: {
+    sectionBackgroundClassName: "bg-[#340c3b]",
     body:  "Delivering marketing programmes that compound — trusted by businesses across B2B, B2C, fintech, retail, and healthcare to drive sustainable, measurable growth.",
     image: "/assets/asset-040.png",
   },

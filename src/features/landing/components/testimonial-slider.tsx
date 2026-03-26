@@ -92,7 +92,7 @@ export function LandingTestimonialSlider({
   const isLandingLayout = layout === "landing";
   const wrapperClass = isDesktop
     ? isLandingLayout
-      ? "content-stretch flex flex-col gap-[32px] items-end left-[632px] absolute top-[198px] w-[685px]"
+      ? "content-stretch flex flex-col gap-[32px] items-end left-[632px] absolute top-[118px] w-[685px]"
       : "content-stretch flex flex-col gap-[32px] items-center relative w-full"
     : "content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full";
   const cardClass = isDesktop
