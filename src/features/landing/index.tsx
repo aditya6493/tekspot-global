@@ -13,7 +13,7 @@ export function LandingPage() {
           <FigmaDesktopLanding />
         </div>
       </div>
-      <div className="-mt-[136px] overflow-x-clip md:hidden">
+      <div className="-mt-[136px] md:hidden">
         <div className="w-full">
           <FigmaMobileLanding />
         </div>

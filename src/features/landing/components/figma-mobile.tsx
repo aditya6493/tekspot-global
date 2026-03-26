@@ -45,7 +45,7 @@ const trustLeaderCards = [
 
 export default function AndroidCompact() {
   return (
-    <div className="bg-white h-[7180px] overflow-x-clip relative w-full" data-name="Android Compact - 1" data-node-id="129:7835">
+    <div className="bg-white h-[7180px] relative w-full" data-name="Android Compact - 1" data-node-id="129:7835">
       <div className="hidden absolute bg-[#f5f5f5] content-stretch flex flex-col h-[2071px] items-start left-0 px-[16px] py-[24px] top-[7180px] w-full" data-name="Footer" data-node-id="129:9148">
         <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="129:9149">
           <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full" data-name="Container" data-node-id="129:9150">
@@ -348,7 +348,7 @@ export default function AndroidCompact() {
       </div>
       <div
         id="what-we-do"
-        className="scroll-mt-[140px] absolute inset-x-0 top-[963px] flex flex-col items-start overflow-x-clip bg-[#340c3b] px-4 py-14"
+        className="scroll-mt-[140px] absolute inset-x-0 top-[963px] flex flex-col items-start bg-[#340c3b] px-4 py-14"
         data-name="Section"
         data-node-id="129:8477"
       >
