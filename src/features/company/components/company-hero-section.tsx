@@ -1,3 +1,5 @@
+const companyHeroVideoSrc = "http://15.206.123.194:8081/videos/video-8.webm";
+
 export function CompanyHeroSection() {
   return (
     <section className="flex flex-col gap-[16px] overflow-hidden bg-transparent md:gap-[24px] md:rounded-[8px] md:bg-white">
@@ -11,7 +13,19 @@ export function CompanyHeroSection() {
 
       {/* ── Dark gradient panel ──────────────────────────────────────── */}
       <div className="relative mx-0 mb-4 overflow-hidden rounded-[8px] bg-[#1c1c1e] md:mx-[32px] md:mb-[32px]">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10]" />
+        <video
+          aria-hidden
+          autoPlay
+          className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
+          loop
+          muted
+          playsInline
+          src={companyHeroVideoSrc}
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-br from-[#2a1a30]/22 via-[#1c1c1e]/18 to-[#0f0f10]/25"
+        />
 
         {/* Panel content */}
         <div className="relative z-10 flex flex-col gap-8 px-4 py-8 md:flex-row md:items-center md:gap-[48px] md:px-[32px] md:py-[56px] lg:gap-[80px]">

@@ -10,6 +10,7 @@ export const staffingContent: ServicePageData = {
         Hire Faster.<br />Hire Better.<br />Hire With Confidence.
       </>
     ),
+    videoSrc: "http://15.206.123.194:8081/videos/video-5.webm",
     body: "From single specialist roles to bulk workforce ramps — we source, screen, and place talent that performs from day one.",
     ctaPrimary:   { label: "Hire now",       href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },
@@ -120,8 +121,7 @@ export const staffingContent: ServicePageData = {
     ),
     body:     "Share your role requirements, team context, and timelines. We handle sourcing, screening, shortlisting, interview coordination, offer management, and onboarding support — one accountable partner, end to end.",
     ctaLabel: "Start hiring",
-    panelBackgroundClassName: "bg-[#340c3b]",
-    useLightText: true,
+    panelBackgroundClassName: "bg-[#faf7fb]",
     steps: [
       { step: "01", label: "Role brief & intake",   desc: "Align on requirements, timelines, compensation bands, and culture fit." },
       { step: "02", label: "Targeted sourcing",     desc: "Active and passive candidate search across networks and databases." },
@@ -132,7 +132,6 @@ export const staffingContent: ServicePageData = {
   },
 
   trust: {
-    sectionBackgroundClassName: "bg-[#340c3b]",
     body:  "Placing talent across technology, operations, marketing, and design — trusted by businesses that can't afford bad hires and won't accept slow ones.",
     image: "/assets/asset-040.png",
   },

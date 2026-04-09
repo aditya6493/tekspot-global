@@ -2,7 +2,8 @@
 
 import { useRef, useState } from "react";
 import type { ServicePageData, ServiceTestimonial } from "./types";
-import { TrustBandSection } from "./trust-band-section";
+import { TrustBandSection } from "@/shared/components/trust-band-section";
+import { ServiceProcessSection } from "@/shared/components/service-process-section";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
 
 /* ─── shared static assets ───────────────────────────────────── */
@@ -32,6 +33,9 @@ const trustLeaderCards = [
   { src: imgImage15, frameClass: "h-[56px] w-[210px]" },
 ] as const;
 
+/** Dark “Trust Center” CTA background — shared across all service pages. */
+const serviceCtaVideoSrc = "http://15.206.123.194:8081/videos/video-9.webm";
+
 /* ═══════════════════════════════════════════════════════════════
    SECTION: Hero
 ═══════════════════════════════════════════════════════════════ */
@@ -48,7 +52,25 @@ function HeroSection({ data }: { data: ServicePageData }) {
 
       {/* dark panel */}
       <div className="relative mx-4 mb-6 overflow-hidden rounded-[8px] bg-[#1c1c1e] md:mx-8 md:mb-8">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10]" />
+        {hero.videoSrc ? (
+          <>
+            <video
+              aria-hidden
+              autoPlay
+              className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
+              loop
+              muted
+              playsInline
+              src={hero.videoSrc}
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-br from-[#2a1a30]/22 via-[#1c1c1e]/18 to-[#0f0f10]/25"
+            />
+          </>
+        ) : (
+          <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10]" />
+        )}
 
         {/* content row */}
         <div className="relative z-10 flex flex-col gap-8 px-6 py-10 md:flex-row md:items-center md:gap-[48px] md:px-8 md:py-[56px] lg:gap-[80px]">
@@ -113,7 +135,7 @@ function HeroSection({ data }: { data: ServicePageData }) {
 function DeliverablesSection({ data }: { data: ServicePageData }) {
   const { deliverables } = data;
   return (
-    <section className="bg-white py-[64px] md:py-[80px]">
+    <section className="bg-white py-[160px]">
       <div className="mx-auto flex w-full max-w-[1374px] flex-col items-center gap-[48px] px-4 md:px-6">
         <h2 className="font-sans font-semibold text-[#1c1c1e] text-[36px] lg:text-[48px] tracking-[-0.48px] leading-[1.2] text-center max-w-[700px]">
           {deliverables.heading}
@@ -156,7 +178,7 @@ function ApproachSection({ data }: { data: ServicePageData }) {
   const headingTextClass = approach.useLightText ? "text-white" : "text-[#1c1c1e]";
   const bodyTextClass = approach.useLightText ? "text-white/80" : "text-[#7d7d7d]";
   return (
-    <section className={`${sectionBgClass} py-[64px] md:py-[80px]`} id="approach">
+    <section className={`${sectionBgClass} py-[160px]`} id="approach">
       <div className="mx-auto w-full max-w-[1374px] px-4 md:px-6">
         <div className="flex flex-col gap-[48px] lg:flex-row lg:gap-[80px] lg:items-start">
           {/* left */}
@@ -201,98 +223,12 @@ function ApproachSection({ data }: { data: ServicePageData }) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SECTION: Process
-═══════════════════════════════════════════════════════════════ */
-function ProcessSection({ data }: { data: ServicePageData }) {
-  const { process } = data;
-  const processPanelBgClass = process.panelBackgroundClassName ?? "bg-[#f7f7f7]";
-  const stepBorderClass = process.useLightText ? "border-white/20" : "border-[#ddd]";
-  const stepNumberClass = process.useLightText ? "text-[#d7b4e0]" : "text-[#ae7cb6]";
-  const stepLabelClass = process.useLightText ? "text-white" : "text-[#1c1c1e]";
-  const stepDescClass = process.useLightText ? "text-white/80" : "text-[#7d7d7d]";
-  return (
-    <section className="bg-white overflow-hidden py-[64px] md:py-[80px]">
-      <div className="mx-auto w-full max-w-[1374px] px-4 md:px-6">
-        <div className="flex flex-col gap-[48px] lg:flex-row lg:gap-[80px] lg:items-center">
-          {/* left */}
-          <div className="flex flex-col gap-[24px] items-start lg:max-w-[480px]">
-            <h2 className="font-sans text-[#1c1c1e] text-[36px] lg:text-[48px] tracking-[-0.48px] leading-[1.18]">
-              {process.heading}
-            </h2>
-            <p className="font-sans text-[#7d7d7d] text-[17px] lg:text-[18px] leading-[27px]">
-              {process.body}
-            </p>
-            <a
-              className="bg-[#340c3b] border border-[#340c3b] flex items-center gap-2 h-[48px] px-[24px] font-sans font-medium text-white text-[15px] hover:opacity-90 transition-opacity"
-              href="#contact"
-            >
-              {process.ctaLabel}
-              <svg className="size-[14px]" fill="none" viewBox="0 0 16 16">
-                <path
-                  d="M3 8h10M9 4l4 4-4 4"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                />
-              </svg>
-            </a>
-          </div>
-
-          {/* right */}
-          <div className="flex flex-1 flex-col">
-            <div className={`${processPanelBgClass} overflow-hidden`}>
-              {process.steps.map((step, i) => (
-                <div
-                  key={step.step}
-                  className={`flex items-start gap-[20px] px-[28px] py-[24px] ${
-                    i < process.steps.length - 1 ? `border-b ${stepBorderClass}` : ""
-                  }`}
-                >
-                  <span className={`font-sans font-semibold text-[13px] tracking-[1px] shrink-0 mt-0.5 ${stepNumberClass}`}>
-                    {step.step}
-                  </span>
-                  <div className="flex flex-col gap-[4px]">
-                    <p className={`font-sans font-medium text-[17px] leading-[1.3] ${stepLabelClass}`}>
-                      {step.label}
-                    </p>
-                    <p className={`font-sans text-[14px] leading-[22px] ${stepDescClass}`}>
-                      {step.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* capability tags */}
-            <div className="mt-[20px] flex flex-wrap gap-[8px]">
-              {process.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="border border-[#340c3b]/20 bg-white font-sans text-[#340c3b] text-[12px] font-medium px-[12px] py-[6px] tracking-[0.3px] rounded-[2px]"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ═══════════════════════════════════════════════════════════════
    SECTION: Trust / Stats
 ═══════════════════════════════════════════════════════════════ */
 function TrustSection({ data }: { data: ServicePageData }) {
   const { trust } = data;
   return (
-    <TrustBandSection
-      body={trust.body}
-      image={trust.image}
-      sectionBackgroundClassName={trust.sectionBackgroundClassName}
-    />
+    <TrustBandSection body={trust.body} image={trust.image} />
   );
 }
 
@@ -302,7 +238,7 @@ function TrustSection({ data }: { data: ServicePageData }) {
 function TeamSection({ data }: { data: ServicePageData }) {
   const { team } = data;
   return (
-    <section className="bg-white py-[64px] md:py-[64px] overflow-hidden">
+    <section className="overflow-hidden bg-white py-[160px]">
       <div className="mx-auto w-full max-w-[1374px]">
         <div className="flex flex-col lg:flex-row lg:min-h-[520px]">
           {/* photo */}
@@ -353,9 +289,21 @@ function TeamSection({ data }: { data: ServicePageData }) {
 function CtaSection({ data }: { data: ServicePageData }) {
   const { cta } = data;
   return (
-    <section className="mx-auto mt-[80px] w-full max-w-[1374px] px-4 pt-[24px] pb-0 md:px-6">
-      <div className="bg-[#1c1c1e] overflow-hidden relative rounded-[8px] px-[32px] py-[56px] lg:px-[56px]">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#2a1a30] via-[#1c1c1e] to-[#0f0f10] opacity-60" />
+    <section className="mx-auto w-full max-w-[1374px] px-4 py-[160px] md:px-6">
+      <div className="relative isolate overflow-hidden rounded-[8px] bg-[#1c1c1e] px-[32px] py-[56px] lg:px-[56px]">
+        <video
+          aria-hidden
+          autoPlay
+          className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
+          loop
+          muted
+          playsInline
+          src={serviceCtaVideoSrc}
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-br from-[#2a1a30]/22 via-[#1c1c1e]/18 to-[#0f0f10]/25"
+        />
 
         <div className="relative z-10 flex flex-col gap-[16px] items-start">
           <p className="font-sans text-[11px] font-medium uppercase tracking-[1.5px] text-white/70">
@@ -369,7 +317,7 @@ function CtaSection({ data }: { data: ServicePageData }) {
           </p>
           <div className="h-[32px]" />
           <a
-            className="bg-white border border-[#340c3b] flex h-[56px] items-center justify-center px-[32px] shadow-[0px_8px_0px_0px_#626262] font-sans font-medium text-[#202124] text-[16px] hover:opacity-90 transition-opacity"
+            className="border border-[#ae7cb6] border-solid bg-white flex h-[56px] items-center justify-center px-[32px] font-sans font-medium text-[#202124] text-[16px] shadow-[-4px_6px_0px_0px_#ae7cb6] transition-colors hover:bg-[#faf7fb]"
             href="#contact"
           >
             {cta.ctaLabel}
@@ -594,13 +542,13 @@ export function ServicePage({ data }: { data: ServicePageData }) {
       <HeroSection data={data} />
       <DeliverablesSection data={data} />
       <ApproachSection data={data} />
-      <ProcessSection data={data} />
+      <ServiceProcessSection process={data.process} />
       <TrustSection data={data} />
       <TeamSection data={data} />
       <CtaSection data={data} />
       <ClientLogosSection />
       <TestimonialsSection data={data} />
-      <section className="mx-auto w-full max-w-[1278px] px-4 py-[48px] md:px-6 md:py-[80px]">
+      <section className="mx-auto w-full max-w-[1278px] px-4 py-[160px] md:px-6">
         <ContactFormSection data={data} />
       </section>
     </div>

@@ -10,6 +10,7 @@ export const designStrategyContent: ServicePageData = {
         Design That Converts.<br />Strategy That Grows.
       </>
     ),
+    videoSrc: "http://15.206.123.194:8081/videos/video-2.webm",
     body: "We turn complex business challenges into clear, compelling experiences — from first research sprint to final pixel.",
     ctaPrimary:   { label: "Start a project", href: "#contact" },
     ctaSecondary: { label: "See our approach", href: "#approach" },
@@ -119,8 +120,7 @@ export const designStrategyContent: ServicePageData = {
     ),
     body:     "Share your goals and constraints. We handle research, wireframes, prototyping, high-fidelity design, design systems, and growth strategy — fully coordinated in one engagement.",
     ctaLabel: "Get started",
-    panelBackgroundClassName: "bg-[#340c3b]",
-    useLightText: true,
+    panelBackgroundClassName: "bg-[#faf7fb]",
     steps: [
       { step: "01", label: "Discovery call",   desc: "Align on goals, timelines, and success metrics." },
       { step: "02", label: "Research sprint",  desc: "User interviews, audits, competitive benchmarks." },
@@ -131,7 +131,6 @@ export const designStrategyContent: ServicePageData = {
   },
 
   trust: {
-    sectionBackgroundClassName: "bg-[#340c3b]",
     body:  "Delivering design work that drives measurable outcomes across SaaS, fintech, healthcare, and retail — trusted by businesses to execute, scale, and grow with confidence.",
     image: "/assets/asset-040.png",
   },

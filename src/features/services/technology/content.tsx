@@ -10,6 +10,7 @@ export const technologyContent: ServicePageData = {
         Technology That<br />Ships. And Scales.
       </>
     ),
+    videoSrc: "http://15.206.123.194:8081/videos/video4.webm",
     body: "Web platforms, mobile apps, APIs, and backend systems — engineered with production-grade architecture, delivered in agile sprints, and built to outlast your next funding round.",
     ctaPrimary:   { label: "Start building", href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },
@@ -119,8 +120,7 @@ export const technologyContent: ServicePageData = {
     ),
     body:     "Share your product vision, technical requirements, and timeline. We handle architecture design, frontend, backend, mobile, APIs, QA, and deployment — fully owned in one engagement.",
     ctaLabel: "Start building",
-    panelBackgroundClassName: "bg-[#340c3b]",
-    useLightText: true,
+    panelBackgroundClassName: "bg-[#faf7fb]",
     steps: [
       { step: "01", label: "Technical discovery",  desc: "Understand your stack, requirements, integrations, and non-functional requirements." },
       { step: "02", label: "Architecture & planning", desc: "System design, tech stack decisions, sprint planning, and milestone mapping." },
@@ -131,7 +131,6 @@ export const technologyContent: ServicePageData = {
   },
 
   trust: {
-    sectionBackgroundClassName: "bg-[#340c3b]",
     body:  "Delivering technology products for SaaS, fintech, healthcare, and retail businesses — trusted by engineering teams that need quality delivery and CTOs who need predictable timelines.",
     image: "/assets/asset-040.png",
   },

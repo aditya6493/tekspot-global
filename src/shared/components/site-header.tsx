@@ -111,7 +111,7 @@ const industryServiceStack = [
 export function DesktopSiteHeader() {
   return (
     <>
-      <div className="bg-[#340c3b] h-[48px] ml-[calc(50%-50vw)] relative shrink-0 w-screen z-[3]">
+      <div className="bg-[#340c3b] bg-[linear-gradient(90deg,#402448_0%,#340c3b_42%,#2d0b32_72%,#150714_100%)] h-[48px] ml-[calc(50%-50vw)] relative shrink-0 w-screen z-[3]">
         <div className="mx-auto flex h-full w-full max-w-[1470px] items-center justify-between px-6 lg:px-16">
           <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
             <div className="relative shrink-0 size-[24px]">
@@ -302,7 +302,7 @@ export function MobileSiteHeader() {
   return (
     <>
       {/* Purple top bar — scrolls away */}
-      <div className="bg-[#340c3b] h-[48px] relative w-full z-[41]">
+      <div className="bg-[#340c3b] bg-[linear-gradient(90deg,#402448_0%,#340c3b_42%,#2d0b32_72%,#150714_100%)] h-[48px] relative w-full z-[41]">
         <div className="flex h-full items-center justify-center">
           <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
             <div className="relative shrink-0 size-[24px]">

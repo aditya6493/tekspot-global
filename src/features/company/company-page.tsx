@@ -48,7 +48,7 @@ const serviceModel = [
 export function CompanyPage() {
   return (
     <div className="min-h-screen bg-[#f5f5f5] text-[#1c1c1e]">
-      <main className="mx-auto w-full max-w-[1374px] px-4 pb-16 pt-5 md:px-6 md:py-5 lg:px-6">
+      <main className="mx-auto w-full max-w-[1374px] px-4 pt-5 pb-[120px] md:px-6 md:pt-5 md:pb-[120px] lg:px-6">
         <div className="flex flex-col gap-10">
 
           {/* ── Figma sections ── */}

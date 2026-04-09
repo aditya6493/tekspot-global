@@ -1,6 +1,6 @@
 
 import { LandingHowWeWorkSection } from "@/features/landing/components/landing-engagement-sections";
-import { TrustBandSection } from "@/features/services/shared/trust-band-section";
+import { TrustBandSection } from "@/shared/components/trust-band-section";
 import { TypewriterLoop } from "@/shared/components/typewriter-loop";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
 import Link from "next/link";
@@ -30,6 +30,8 @@ const imgChevron = "/assets/asset-033.svg";
 const imgChevron1 = "/assets/asset-012.svg";
 const imgChevron2 = "/assets/asset-038.svg";
 const imgGrid1 = "/assets/asset-037.svg";
+
+const heroVideoSrc = "http://15.206.123.194:8081/videos/video-10.webm";
 
 const trustLeaderCards = [
   { src: imgImage12, frameClass: "h-[28px] w-[216.468px]" },
@@ -341,14 +343,13 @@ export default function AndroidCompact() {
       >
         <LandingHowWeWorkSection />
         <TrustBandSection
-          sectionBackgroundClassName="bg-[#340c3b]"
           body="Placing talent across technology, operations, marketing, and design — trusted by businesses that can't afford bad hires and won't accept slow ones."
           image="/assets/asset-040.png"
         />
       </div>
       <div
         id="what-we-do"
-        className="scroll-mt-[140px] absolute inset-x-0 top-[963px] flex flex-col items-start bg-[#340c3b] px-4 py-14"
+        className="scroll-mt-[140px] absolute inset-x-0 top-[963px] flex flex-col items-start bg-[#340c3b] bg-[linear-gradient(90deg,#8d3da6_0%,#642478_56%,#1a0427_100%)] px-4 py-14 relative isolate overflow-hidden z-[20]"
         data-name="Section"
         data-node-id="129:8477"
       >
@@ -497,7 +498,16 @@ export default function AndroidCompact() {
           </div>
         </div>
         <div className="content-stretch flex flex-col h-[480px] items-start justify-center overflow-clip relative shrink-0 w-full" data-name="Img" data-node-id="129:8449">
-          <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+          <video
+            aria-hidden
+            autoPlay
+            className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
+            loop
+            muted
+            playsInline
+            src={heroVideoSrc}
+          />
+          <div aria-hidden="true" className="absolute inset-0 pointer-events-none z-[2]">
             <div className="absolute inset-0 bg-[#340c3b] opacity-50" />
           </div>
           <div className="pointer-events-none absolute inset-0 z-[3] flex items-center justify-center px-4">

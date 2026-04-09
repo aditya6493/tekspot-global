@@ -47,6 +47,8 @@ export type ServicePageData = {
     /** H1 — can contain <br /> for line breaks */
     heading: ReactNode;
     body: string;
+    /** Optional background video (e.g. .webm) behind the hero gradient scrim */
+    videoSrc?: string;
     ctaPrimary: { label: string; href: string };
     ctaSecondary: { label: string; href: string };
     testimonial: {
@@ -90,8 +92,6 @@ export type ServicePageData = {
 
   trust: {
     body: string;
-    /** Optional section background utility class (defaults to light gray) */
-    sectionBackgroundClassName?: string;
     /** Image shown on the right side of the trust section */
     image: string;
   };

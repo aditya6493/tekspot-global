@@ -1,6 +1,6 @@
 
 import { LandingHowWeWorkSection } from "@/features/landing/components/landing-engagement-sections";
-import { TrustBandSection } from "@/features/services/shared/trust-band-section";
+import { TrustBandSection } from "@/shared/components/trust-band-section";
 import { TypewriterLoop } from "@/shared/components/typewriter-loop";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
 import Link from "next/link";
@@ -38,6 +38,8 @@ const imgMdiInstagram1 = "/assets/asset-002.svg";
 const imgIcRoundFacebook1 = "/assets/asset-001.svg";
 const imgMaterialSymbolsLightDirectionsOutlineSharp = "/assets/asset-039.svg";
 
+const heroVideoSrc = "http://15.206.123.194:8081/videos/video-10.webm";
+
 const trustLeaderCards = [
   { src: imgImage12, frameClass: "h-[28px] w-[216.468px]" },
   { src: imgImage8, frameClass: "aspect-[300/200] w-full" },
@@ -70,7 +72,16 @@ export default function Component1470WDefault() {
           <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-full" data-node-id="76:6993">
             <div className="content-stretch flex flex-col items-center justify-center overflow-clip py-[40px] relative rounded-[8px] shrink-0 w-full" data-name="Container" data-node-id="76:6965">
               <div className="content-stretch flex flex-col h-[480px] items-start justify-center overflow-clip relative shrink-0 w-[1310px]" data-name="6981490c51c1e151d4cb9219%2F69839112fecdf86b71895059_developers-gradient_mp4.mp4" data-node-id="76:6966">
-                <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+                <video
+                  aria-hidden
+                  autoPlay
+                  className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
+                  loop
+                  muted
+                  playsInline
+                  src={heroVideoSrc}
+                />
+                <div aria-hidden="true" className="absolute inset-0 pointer-events-none z-[2]">
                   <div className="absolute inset-0 bg-[#340c3b] opacity-50" />
                 </div>
                 <div className="pointer-events-none absolute inset-0 z-[3] flex items-center justify-center">
@@ -114,7 +125,7 @@ export default function Component1470WDefault() {
           <div className="content-stretch flex flex-col gap-[80px] items-start relative shrink-0 w-full" data-node-id="12:6345">
             <div
               id="what-we-do"
-              className="scroll-mt-[120px] box-border w-screen max-w-[100vw] shrink-0 bg-[#340c3b] py-14 pl-4 pr-4 md:py-20 md:pl-8 md:pr-8 ml-[calc(50%-50vw)]"
+              className="scroll-mt-[120px] box-border w-screen max-w-[100vw] shrink-0 bg-[#340c3b] bg-[linear-gradient(90deg,#8d3da6_0%,#642478_56%,#1a0427_100%)] py-14 pl-4 pr-4 md:py-20 md:pl-8 md:pr-8 ml-[calc(50%-50vw)] relative isolate overflow-hidden z-[20]"
               data-name="Section"
               data-node-id="3:3738"
             >
@@ -257,7 +268,6 @@ export default function Component1470WDefault() {
             <LandingHowWeWorkSection />
             <div className="relative ml-[calc(50%-50vw)] box-border max-w-[100vw] shrink-0 w-screen" data-name="Trust">
               <TrustBandSection
-                sectionBackgroundClassName="bg-[#340c3b]"
                 body="Placing talent across technology, operations, marketing, and design — trusted by businesses that can't afford bad hires and won't accept slow ones."
                 image="/assets/asset-040.png"
               />

@@ -10,6 +10,7 @@ export const digitalMarketingContent: ServicePageData = {
         Marketing That Moves Metrics.<br />Not Just Impressions.
       </>
     ),
+    videoSrc: "http://15.206.123.194:8081/videos/video-7.webm",
     body: "Performance campaigns, SEO, content, and lifecycle marketing — all coordinated to drive qualified pipeline and measurable revenue growth.",
     ctaPrimary:   { label: "Grow with us",   href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },
@@ -119,8 +120,7 @@ export const digitalMarketingContent: ServicePageData = {
     ),
     body:     "Share your revenue targets and current marketing state. We handle channel strategy, campaign execution, content, SEO, and lifecycle automation — coordinated in one growth programme you can see working.",
     ctaLabel: "Get started",
-    panelBackgroundClassName: "bg-[#340c3b]",
-    useLightText: true,
+    panelBackgroundClassName: "bg-[#faf7fb]",
     steps: [
       { step: "01", label: "Marketing audit",        desc: "Analyse current channels, attribution, spend efficiency, and competitive position." },
       { step: "02", label: "Strategy & roadmap",     desc: "Channel mix, budget allocation, messaging framework, and quarterly OKRs." },
@@ -131,7 +131,6 @@ export const digitalMarketingContent: ServicePageData = {
   },
 
   trust: {
-    sectionBackgroundClassName: "bg-[#340c3b]",
     body:  "Delivering marketing programmes that compound — trusted by businesses across B2B, B2C, fintech, retail, and healthcare to drive sustainable, measurable growth.",
     image: "/assets/asset-040.png",
   },
