@@ -31,7 +31,7 @@ const imgChevron1 = "/assets/asset-012.svg";
 const imgChevron2 = "/assets/asset-038.svg";
 const imgGrid1 = "/assets/asset-037.svg";
 
-const heroVideoSrc = "http://15.206.123.194:8081/videos/video-10.webm";
+const heroVideoSrc = "/videos/video-10.webm";
 
 const trustLeaderCards = [
   { src: imgImage12, frameClass: "h-[28px] w-[216.468px]" },

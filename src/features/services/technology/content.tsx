@@ -10,7 +10,7 @@ export const technologyContent: ServicePageData = {
         Technology That<br />Ships. And Scales.
       </>
     ),
-    videoSrc: "http://15.206.123.194:8081/videos/video4.webm",
+    videoSrc: "/videos/video4.webm",
     body: "Web platforms, mobile apps, APIs, and backend systems — engineered with production-grade architecture, delivered in agile sprints, and built to outlast your next funding round.",
     ctaPrimary:   { label: "Start building", href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },

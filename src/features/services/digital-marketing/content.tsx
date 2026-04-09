@@ -10,7 +10,7 @@ export const digitalMarketingContent: ServicePageData = {
         Marketing That Moves Metrics.<br />Not Just Impressions.
       </>
     ),
-    videoSrc: "http://15.206.123.194:8081/videos/video-7.webm",
+    videoSrc: "/videos/video-7.webm",
     body: "Performance campaigns, SEO, content, and lifecycle marketing — all coordinated to drive qualified pipeline and measurable revenue growth.",
     ctaPrimary:   { label: "Grow with us",   href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },

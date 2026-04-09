@@ -10,7 +10,7 @@ export const staffingContent: ServicePageData = {
         Hire Faster.<br />Hire Better.<br />Hire With Confidence.
       </>
     ),
-    videoSrc: "http://15.206.123.194:8081/videos/video-5.webm",
+    videoSrc: "/videos/video-5.webm",
     body: "From single specialist roles to bulk workforce ramps — we source, screen, and place talent that performs from day one.",
     ctaPrimary:   { label: "Hire now",       href: "#contact" },
     ctaSecondary: { label: "Our approach",   href: "#approach" },

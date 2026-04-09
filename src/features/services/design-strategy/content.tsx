@@ -10,7 +10,7 @@ export const designStrategyContent: ServicePageData = {
         Design That Converts.<br />Strategy That Grows.
       </>
     ),
-    videoSrc: "http://15.206.123.194:8081/videos/video-2.webm",
+    videoSrc: "/videos/video-2.webm",
     body: "We turn complex business challenges into clear, compelling experiences — from first research sprint to final pixel.",
     ctaPrimary:   { label: "Start a project", href: "#contact" },
     ctaSecondary: { label: "See our approach", href: "#approach" },

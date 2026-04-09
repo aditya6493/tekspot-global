@@ -38,7 +38,7 @@ const imgMdiInstagram1 = "/assets/asset-002.svg";
 const imgIcRoundFacebook1 = "/assets/asset-001.svg";
 const imgMaterialSymbolsLightDirectionsOutlineSharp = "/assets/asset-039.svg";
 
-const heroVideoSrc = "http://15.206.123.194:8081/videos/video-10.webm";
+const heroVideoSrc = "/videos/video-10.webm";
 
 const trustLeaderCards = [
   { src: imgImage12, frameClass: "h-[28px] w-[216.468px]" },

@@ -1,4 +1,4 @@
-const companyHeroVideoSrc = "http://15.206.123.194:8081/videos/video-8.webm";
+const companyHeroVideoSrc = "/videos/video-8.webm";
 
 export function CompanyHeroSection() {
   return (

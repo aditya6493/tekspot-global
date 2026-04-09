@@ -34,7 +34,7 @@ const trustLeaderCards = [
 ] as const;
 
 /** Dark “Trust Center” CTA background — shared across all service pages. */
-const serviceCtaVideoSrc = "http://15.206.123.194:8081/videos/video-9.webm";
+const serviceCtaVideoSrc = "/videos/video-9.webm";
 
 /* ═══════════════════════════════════════════════════════════════
    SECTION: Hero

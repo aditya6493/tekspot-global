@@ -1,8 +1,7 @@
 const imgStar = "/assets/asset-006.svg";
 
-/** Shared trust-band background video for landing and all service pages. */
-export const DEFAULT_TRUST_BAND_VIDEO_SRC =
-  "http://15.206.123.194:8081/videos/video-6.webm";
+/** Same-origin path; proxied in production via `next.config` (avoids HTTPS → HTTP mixed content). */
+export const DEFAULT_TRUST_BAND_VIDEO_SRC = "/videos/video-6.webm";
 
 export type TrustBandSectionProps = {
   body: string;
