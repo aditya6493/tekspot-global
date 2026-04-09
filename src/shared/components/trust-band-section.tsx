@@ -1,4 +1,5 @@
 const imgStar = "/assets/asset-006.svg";
+import { AutoplayVideo } from "@/shared/components/autoplay-video";
 
 /** Same-origin path; proxied in production via `next.config` (avoids HTTPS → HTTP mixed content). */
 export const DEFAULT_TRUST_BAND_VIDEO_SRC = "/videos/video-6.webm";
@@ -16,14 +17,9 @@ export function TrustBandSection({
   videoSrc = DEFAULT_TRUST_BAND_VIDEO_SRC,
 }: TrustBandSectionProps) {
   return (
-    <section className="relative isolate overflow-hidden bg-[#340c3b] py-[160px]">
-      <video
-        aria-hidden
-        autoPlay
+    <section className="relative isolate overflow-hidden bg-[#340c3b] py-14 md:py-[160px]">
+      <AutoplayVideo
         className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
-        loop
-        muted
-        playsInline
         src={videoSrc}
       />
       <div

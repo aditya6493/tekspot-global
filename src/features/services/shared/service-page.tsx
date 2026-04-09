@@ -5,6 +5,7 @@ import type { ServicePageData, ServiceTestimonial } from "./types";
 import { TrustBandSection } from "@/shared/components/trust-band-section";
 import { ServiceProcessSection } from "@/shared/components/service-process-section";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
+import { AutoplayVideo } from "@/shared/components/autoplay-video";
 
 /* ─── shared static assets ───────────────────────────────────── */
 const imgAvatar      = "/assets/asset-069.png";
@@ -54,13 +55,8 @@ function HeroSection({ data }: { data: ServicePageData }) {
       <div className="relative mx-4 mb-6 overflow-hidden rounded-[8px] bg-[#1c1c1e] md:mx-8 md:mb-8">
         {hero.videoSrc ? (
           <>
-            <video
-              aria-hidden
-              autoPlay
+            <AutoplayVideo
               className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
-              loop
-              muted
-              playsInline
               src={hero.videoSrc}
             />
             <div
@@ -135,7 +131,7 @@ function HeroSection({ data }: { data: ServicePageData }) {
 function DeliverablesSection({ data }: { data: ServicePageData }) {
   const { deliverables } = data;
   return (
-    <section className="bg-white py-[160px]">
+    <section className="bg-white py-20 md:py-[120px] lg:py-[160px]">
       <div className="mx-auto flex w-full max-w-[1374px] flex-col items-center gap-[48px] px-4 md:px-6">
         <h2 className="font-sans font-semibold text-[#1c1c1e] text-[36px] lg:text-[48px] tracking-[-0.48px] leading-[1.2] text-center max-w-[700px]">
           {deliverables.heading}
@@ -178,7 +174,7 @@ function ApproachSection({ data }: { data: ServicePageData }) {
   const headingTextClass = approach.useLightText ? "text-white" : "text-[#1c1c1e]";
   const bodyTextClass = approach.useLightText ? "text-white/80" : "text-[#7d7d7d]";
   return (
-    <section className={`${sectionBgClass} py-[160px]`} id="approach">
+    <section className={`${sectionBgClass} py-20 md:py-[120px] lg:py-[160px]`} id="approach">
       <div className="mx-auto w-full max-w-[1374px] px-4 md:px-6">
         <div className="flex flex-col gap-[48px] lg:flex-row lg:gap-[80px] lg:items-start">
           {/* left */}
@@ -238,7 +234,7 @@ function TrustSection({ data }: { data: ServicePageData }) {
 function TeamSection({ data }: { data: ServicePageData }) {
   const { team } = data;
   return (
-    <section className="overflow-hidden bg-white py-[160px]">
+    <section className="overflow-hidden bg-white py-20 md:py-[120px] lg:py-[160px]">
       <div className="mx-auto w-full max-w-[1374px]">
         <div className="flex flex-col lg:flex-row lg:min-h-[520px]">
           {/* photo */}
@@ -289,15 +285,10 @@ function TeamSection({ data }: { data: ServicePageData }) {
 function CtaSection({ data }: { data: ServicePageData }) {
   const { cta } = data;
   return (
-    <section className="mx-auto w-full max-w-[1374px] px-4 py-[160px] md:px-6">
+    <section className="mx-auto w-full max-w-[1374px] px-4 py-12 md:px-6 md:py-[120px] lg:py-[160px]">
       <div className="relative isolate overflow-hidden rounded-[8px] bg-[#1c1c1e] px-[32px] py-[56px] lg:px-[56px]">
-        <video
-          aria-hidden
-          autoPlay
+        <AutoplayVideo
           className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
-          loop
-          muted
-          playsInline
           src={serviceCtaVideoSrc}
         />
         <div
@@ -548,7 +539,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
       <CtaSection data={data} />
       <ClientLogosSection />
       <TestimonialsSection data={data} />
-      <section className="mx-auto w-full max-w-[1278px] px-4 py-[160px] md:px-6">
+      <section className="mx-auto w-full max-w-[1278px] px-4 py-14 md:px-6 md:py-[120px] lg:py-[160px]">
         <ContactFormSection data={data} />
       </section>
     </div>

@@ -94,7 +94,7 @@ export function LandingEngagementSections() {
   return (
     <>
       <section
-        className="bg-[#faf7fb] px-4 pb-14 pt-[80px] md:px-8 md:py-20"
+        className="bg-[#faf7fb] px-4 pb-14 pt-10 md:px-8 md:py-20"
         aria-labelledby="landing-discover-heading"
       >
         <div className="mx-auto w-full max-w-[1374px]">

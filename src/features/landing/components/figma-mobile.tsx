@@ -1,8 +1,10 @@
 
 import { LandingHowWeWorkSection } from "@/features/landing/components/landing-engagement-sections";
+import { MobileLandingScrollShell } from "@/features/landing/components/mobile-landing-scroll-shell";
 import { TrustBandSection } from "@/shared/components/trust-band-section";
 import { TypewriterLoop } from "@/shared/components/typewriter-loop";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
+import { AutoplayVideo } from "@/shared/components/autoplay-video";
 import Link from "next/link";
 
 const imgImage12 = "/assets/asset-045.png";
@@ -47,7 +49,7 @@ const trustLeaderCards = [
 
 export default function AndroidCompact() {
   return (
-    <div className="bg-white h-[7180px] relative w-full" data-name="Android Compact - 1" data-node-id="129:7835">
+    <MobileLandingScrollShell>
       <div className="hidden absolute bg-[#f5f5f5] content-stretch flex flex-col h-[2071px] items-start left-0 px-[16px] py-[24px] top-[7180px] w-full" data-name="Footer" data-node-id="129:9148">
         <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="129:9149">
           <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full" data-name="Container" data-node-id="129:9150">
@@ -282,61 +284,8 @@ export default function AndroidCompact() {
           </div>
         </div>
       </div>
-      <div className="absolute content-stretch flex flex-col gap-[40px] items-center left-0 top-[6130px] w-full" data-name="Client" data-node-id="129:8701">
-        <div className="-mt-[64px] content-stretch flex flex-col gap-[8px] items-start px-[24px] relative shrink-0 w-full" data-node-id="129:8700">
-          <div className="content-stretch flex flex-col items-start justify-end relative shrink-0 w-full" data-name="Container" data-node-id="129:8692">
-            <div className="content-stretch flex flex-col items-start pr-[67.9px] relative shrink-0 w-full" data-name="Heading 2" data-node-id="129:8693">
-              <div className="flex flex-col font-sans font-bold justify-center leading-[0] relative shrink-0 text-[#1c1c1e] text-[32px] tracking-[-0.48px] whitespace-nowrap" data-node-id="129:8694">
-                <p className="leading-[1.15]">What our clients says</p>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[379px]" data-name="Container" data-node-id="129:8695">
-              <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[#7d7d7d] text-[18px] w-full" data-node-id="129:8696">
-                <p className="leading-[1.5]">Your whole firm communicates with confidence. Issues get fixed at the source. Compliance focuses on what matters.</p>
-              </div>
-            </div>
-            <div className="h-[48px] shrink-0 w-full" data-name="Rectangle" data-node-id="129:8697" />
-          </div>
-          <LandingTestimonialSlider variant="mobile" />
-        </div>
-        <div className="mt-[80px] bg-[#1c1c1e] content-stretch flex flex-col items-start overflow-clip px-[32px] py-[56px] relative shrink-0 w-full" data-name="Section" data-node-id="129:8629">
-          <div className="-translate-y-1/2 absolute h-[524px] left-0 overflow-clip right-[-10.92%] top-[calc(50%+13.5px)]" data-name="Container" data-node-id="129:8630">
-            <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex flex-col h-[468px] items-start justify-center left-[calc(50%+18.5px)] overflow-clip top-[calc(50%-15px)] w-[1428px]" data-name="6981490c51c1e151d4cb9219%2F69839085edb11a12b2ad6a95_blocker-gradient_mp4.mp4" data-node-id="129:8631">
-              <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-                <div className="absolute inset-0 overflow-hidden">
-                  <img alt="" className="absolute h-[184.64%] left-0 max-w-none top-[-42.32%] w-full" src={img6981490C51C1E151D4Cb92192F69839085Edb11A12B2Ad6A95BlockerGradientMp4Mp4} />
-                </div>
-                <div className="absolute inset-0 overflow-hidden">
-                  <img alt="" className="absolute h-[168.99%] left-0 max-w-none top-[-34.52%] w-full" src={img6981490C51C1E151D4Cb92192F69839085Edb11A12B2Ad6A95BlockerGradientMp4Mp5} />
-                </div>
-              </div>
-              <div className="bg-[rgba(0,0,0,0.25)] h-[468px] shrink-0 w-[1374px]" data-node-id="129:8632" />
-              <div className="flex-[1_0_0] min-h-px min-w-px w-full" data-name="Rectangle" data-node-id="129:8633" />
-            </div>
-          </div>
-          <div className="content-stretch flex flex-col items-start relative shrink-0 w-[355px]" data-name="Container" data-node-id="129:8634">
-            <div className="flex flex-col font-sans font-normal justify-center leading-[0] relative shrink-0 text-[10.9px] text-white tracking-[-0.12px] uppercase whitespace-nowrap" data-node-id="129:8635">
-              <p className="leading-[18px]">TRUST CENTER</p>
-            </div>
-            <div className="h-[16px] shrink-0 w-full" data-name="Rectangle" data-node-id="129:8636" />
-            <div className="content-stretch flex flex-col gap-[16px] items-start leading-[0] pr-[106.31px] relative shrink-0 text-white tracking-[-0.48px] w-full" data-name="Heading 2" data-node-id="129:8637">
-              <div className="flex flex-col font-sans font-medium justify-center relative shrink-0 text-[32px] w-[355px]" data-node-id="129:8638">
-                <p className="leading-[1.4]">Proven teams. Reliable execution. Real business impact.</p>
-              </div>
-              <div className="flex flex-col font-sans font-normal justify-center relative shrink-0 text-[16px] w-[355px]" data-node-id="129:8639">
-                <p className="leading-[1.4]">From hiring to design to growth — we deliver with consistency, speed, and quality you can trust.</p>
-              </div>
-            </div>
-            <div className="h-[48px] shrink-0 w-full" data-name="Rectangle" data-node-id="129:8640" />
-            <div className="bg-white border border-[#ae7cb6] border-solid content-stretch flex flex-col h-[56px] items-center justify-center px-[17px] py-[9px] relative shadow-[0px_8px_0px_0px_#ae7cb6] shrink-0 w-[329px]" data-name="Component" data-node-id="129:8641">
-              <div className="flex flex-col font-sans font-medium justify-center leading-[0] relative shrink-0 text-[#202124] text-[16px] text-center whitespace-nowrap" data-node-id="129:8642">
-                <p className="leading-[normal]">Talk to an expert</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div
+        id="mobile-landing-stack"
         className="absolute left-0 top-[3082px] flex w-full flex-col"
         data-name="How we work and trust"
         data-node-id="129:8627"
@@ -346,10 +295,84 @@ export default function AndroidCompact() {
           body="Placing talent across technology, operations, marketing, and design — trusted by businesses that can't afford bad hires and won't accept slow ones."
           image="/assets/asset-040.png"
         />
+        <div className="relative z-10 flex w-full flex-col items-stretch bg-white" data-name="Client" data-node-id="129:8701">
+          <div className="mx-auto w-full max-w-[1374px] px-4 py-12 sm:px-6" data-node-id="129:8700">
+            <div className="flex w-full min-w-0 flex-col gap-8" data-name="Container" data-node-id="129:8692">
+              <div className="flex w-full min-w-0 flex-col gap-3">
+                <h2
+                  className="font-sans text-[28px] font-bold leading-[1.15] tracking-[-0.48px] text-[#1c1c1e] sm:text-[32px]"
+                  data-node-id="129:8694"
+                >
+                  What our clients say
+                </h2>
+                <p
+                  className="font-sans text-[16px] font-medium leading-[1.5] text-[#7d7d7d] sm:text-[18px]"
+                  data-node-id="129:8696"
+                >
+                  Your whole firm communicates with confidence. Issues get fixed at the source. Compliance focuses on what matters.
+                </p>
+              </div>
+              <div className="w-full min-w-0 max-w-full">
+                <LandingTestimonialSlider variant="mobile" />
+              </div>
+            </div>
+          </div>
+          <div
+            className="relative mt-8 flex w-full flex-col items-start overflow-clip bg-[#1c1c1e] px-4 py-14 sm:mt-10 sm:px-6 sm:py-14"
+            data-name="Section"
+            data-node-id="129:8629"
+          >
+            <div
+              className="pointer-events-none absolute left-0 right-[-10.92%] top-[calc(50%+13.5px)] h-[524px] -translate-y-1/2 overflow-clip"
+              data-name="Container"
+              data-node-id="129:8630"
+            >
+              <div
+                className="absolute left-1/2 top-1/2 flex h-[468px] w-[1428px] max-w-none -translate-x-1/2 -translate-y-1/2 flex-col items-start justify-center overflow-clip sm:w-[min(1428px,calc(100vw+200px))]"
+                data-name="6981490c51c1e151d4cb9219%2F69839085edb11a12b2ad6a95_blocker-gradient_mp4.mp4"
+                data-node-id="129:8631"
+              >
+                <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+                  <div className="absolute inset-0 overflow-hidden">
+                    <img alt="" className="absolute left-0 top-[-42.32%] h-[184.64%] w-full max-w-none" src={img6981490C51C1E151D4Cb92192F69839085Edb11A12B2Ad6A95BlockerGradientMp4Mp4} />
+                  </div>
+                  <div className="absolute inset-0 overflow-hidden">
+                    <img alt="" className="absolute left-0 top-[-34.52%] h-[168.99%] w-full max-w-none" src={img6981490C51C1E151D4Cb92192F69839085Edb11A12B2Ad6A95BlockerGradientMp4Mp5} />
+                  </div>
+                </div>
+                <div className="h-[468px] w-full max-w-[1374px] shrink-0 bg-[rgba(0,0,0,0.25)]" data-node-id="129:8632" />
+                <div className="min-h-px min-w-px w-full flex-[1_0_0]" data-name="Rectangle" data-node-id="129:8633" />
+              </div>
+            </div>
+            <div className="relative z-10 mx-auto flex w-full max-w-[1374px] flex-col items-start" data-name="Container" data-node-id="129:8634">
+              <p className="font-sans text-[10.9px] font-normal uppercase leading-[18px] tracking-[-0.12px] text-white" data-node-id="129:8635">
+                TRUST CENTER
+              </p>
+              <div className="h-4 w-full shrink-0" data-name="Rectangle" data-node-id="129:8636" />
+              <div className="flex w-full min-w-0 flex-col gap-4 text-white tracking-[-0.48px]" data-name="Heading 2" data-node-id="129:8637">
+                <p className="font-sans text-[28px] font-medium leading-[1.4] sm:text-[32px]" data-node-id="129:8638">
+                  Proven teams. Reliable execution. Real business impact.
+                </p>
+                <p className="font-sans text-[16px] font-normal leading-[1.4] text-white/90" data-node-id="129:8639">
+                  From hiring to design to growth — we deliver with consistency, speed, and quality you can trust.
+                </p>
+              </div>
+              <div className="h-8 w-full shrink-0" data-name="Rectangle" data-node-id="129:8640" />
+              <a
+                className="flex h-14 w-full max-w-full items-center justify-center border border-[#ae7cb6] bg-white px-5 font-sans text-[16px] font-medium text-[#202124] shadow-[0px_8px_0px_0px_#ae7cb6] sm:inline-flex sm:min-w-[240px] sm:max-w-[329px]"
+                data-name="Component"
+                data-node-id="129:8641"
+                href="mailto:business@tekspotglobal.com?subject=Intro%20%E2%80%94%20Tekspot"
+              >
+                Talk to an expert
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <div
         id="what-we-do"
-        className="scroll-mt-[140px] absolute inset-x-0 top-[963px] flex flex-col items-start bg-[#340c3b] bg-[linear-gradient(90deg,#8d3da6_0%,#642478_56%,#1a0427_100%)] px-4 py-14 relative isolate overflow-hidden z-[20]"
+        className="scroll-mt-[140px] absolute inset-x-0 top-[963px] relative isolate z-[20] flex flex-col items-start overflow-visible bg-[#340c3b] bg-[linear-gradient(90deg,#8d3da6_0%,#642478_56%,#1a0427_100%)] px-4 py-14"
         data-name="Section"
         data-node-id="129:8477"
       >
@@ -364,10 +387,10 @@ export default function AndroidCompact() {
               <p className="leading-[27px]">From building teams to driving growth and delivering digital products — we bring everything together to help your business scale faster.</p>
             </div>
           </div>
-          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="129:8483">
+          <div className="content-stretch relative flex w-full shrink-0 flex-col items-start gap-0" data-name="Container" data-node-id="129:8483">
             <Link
               href="/services/staffing"
-              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full sticky top-[80px] z-[1]"
+              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch relative flex flex-col items-start overflow-clip p-[24px] shadow-[-8px_8px_0px_0px_#ae7cb6] z-[1] max-lg:sticky max-lg:top-[80px] max-lg:h-[405px] max-lg:shrink-0 max-lg:w-full max-lg:mt-[40px] max-lg:first:mt-0"
               data-name="Component 3"
               data-node-id="129:8484"
             >
@@ -396,7 +419,7 @@ export default function AndroidCompact() {
             </Link>
             <Link
               href="/services/design-strategy"
-              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full sticky top-[80px] z-[2] mt-[40px]"
+              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch relative flex flex-col items-start overflow-clip p-[24px] shadow-[-8px_8px_0px_0px_#ae7cb6] z-[2] max-lg:sticky max-lg:top-[80px] max-lg:h-[405px] max-lg:shrink-0 max-lg:w-full max-lg:mt-[40px]"
               data-name="Component 4"
               data-node-id="129:8496"
             >
@@ -425,7 +448,7 @@ export default function AndroidCompact() {
             </Link>
             <Link
               href="/services/digital-marketing"
-              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full sticky top-[80px] z-[3] mt-[40px]"
+              className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch relative flex flex-col items-start overflow-clip p-[24px] shadow-[-8px_8px_0px_0px_#ae7cb6] z-[3] max-lg:sticky max-lg:top-[80px] max-lg:h-[405px] max-lg:shrink-0 max-lg:w-full max-lg:mt-[40px]"
               data-name="Component 5"
               data-node-id="129:8508"
             >
@@ -456,7 +479,7 @@ export default function AndroidCompact() {
                 </div>
               </div>
             </Link>
-            <div className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch flex flex-col h-[405px] items-start overflow-clip p-[24px] relative shadow-[-8px_8px_0px_0px_#ae7cb6] shrink-0 w-full sticky top-[80px] z-[4] mt-[40px]" data-name="Component 7" data-node-id="129:8520">
+            <div className="bg-white border-[#340c3b] border-[0.5px] border-solid content-stretch relative flex flex-col items-start overflow-clip p-[24px] shadow-[-8px_8px_0px_0px_#ae7cb6] z-[4] max-lg:sticky max-lg:top-[80px] max-lg:h-[405px] max-lg:shrink-0 max-lg:w-full max-lg:mt-[40px]" data-name="Component 7" data-node-id="129:8520">
               <div className="content-stretch flex flex-col items-end relative shrink-0 w-full" data-node-id="129:8521">
                 <div className="h-[32px] relative shrink-0 w-[32.667px]" data-name="Chevron" data-node-id="129:8522">
                   <img alt="" className="absolute block max-w-none size-full" src={imgChevron2} />
@@ -498,13 +521,8 @@ export default function AndroidCompact() {
           </div>
         </div>
         <div className="content-stretch flex flex-col h-[480px] items-start justify-center overflow-clip relative shrink-0 w-full" data-name="Img" data-node-id="129:8449">
-          <video
-            aria-hidden
-            autoPlay
+          <AutoplayVideo
             className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
-            loop
-            muted
-            playsInline
             src={heroVideoSrc}
           />
           <div aria-hidden="true" className="absolute inset-0 pointer-events-none z-[2]">
@@ -519,6 +537,6 @@ export default function AndroidCompact() {
           <div className="flex-[1_0_0] min-h-px min-w-px w-full" data-name="Rectangle" data-node-id="129:8450" />
         </div>
       </div>
-    </div>
+    </MobileLandingScrollShell>
   );
 }

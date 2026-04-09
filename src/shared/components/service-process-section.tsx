@@ -15,7 +15,7 @@ export function ServiceProcessSection({ process }: ServiceProcessSectionProps) {
   const stepDescClass = process.useLightText ? "text-white/80" : "text-[#7d7d7d]";
 
   return (
-    <section className="overflow-hidden bg-white py-[160px]">
+    <section className="overflow-hidden bg-white py-20 md:py-[120px] lg:py-[160px]">
       <div className="mx-auto w-full max-w-[1374px] px-4 md:px-6">
         <div className="flex flex-col gap-[48px] lg:flex-row lg:items-center lg:gap-[80px]">
           <div className="flex flex-col items-start gap-[24px] lg:max-w-[480px]">

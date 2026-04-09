@@ -94,22 +94,22 @@ export function LandingTestimonialSlider({
     ? isLandingLayout
       ? "content-stretch flex flex-col gap-[32px] items-end left-[632px] absolute top-[118px] w-[685px]"
       : "content-stretch flex flex-col gap-[32px] items-center relative w-full"
-    : "content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full";
+    : "content-stretch flex min-w-0 max-w-full flex-col gap-[16px] items-stretch relative w-full";
   const cardClass = isDesktop
     ? "bg-white border border-[#ae7cb6] border-solid content-stretch flex h-[298px] items-center p-[24px] relative shadow-[-8px_10px_0px_0px_#ae7cb6] shrink-0 w-full"
-    : "bg-white border border-[#ae7cb6] border-solid content-stretch flex min-h-[320px] items-start p-[16px] relative shadow-[-6px_12px_0px_0px_#ae7cb6] shrink-0 w-full";
+    : "box-border flex min-h-[280px] w-full max-w-full min-w-0 items-start border border-solid border-[#ae7cb6] bg-white p-4 shadow-[-6px_12px_0px_0px_#ae7cb6] sm:min-h-[300px] sm:p-5";
   const slideClass = isDesktop
-    ? "content-stretch flex gap-[8px] h-full items-start min-h-px min-w-px relative shrink-0 w-full"
-    : "content-stretch flex gap-[10px] items-start min-h-px min-w-px relative shrink-0 w-full";
+    ? "content-stretch flex gap-[8px] h-full items-start min-h-0 min-w-0 relative shrink-0"
+    : "content-stretch flex gap-[10px] items-start min-h-0 min-w-0 relative shrink-0";
   const avatarClass = isDesktop
     ? "relative shrink-0 size-[80px]"
     : "relative shrink-0 size-[44.42px]";
   const textWrapClass = isDesktop
-    ? "content-stretch flex flex-[1_0_0] flex-col gap-[8px] h-full items-start leading-[0] min-h-px min-w-px px-[16px] py-[8px] relative"
-    : "content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start leading-[0] min-h-px min-w-px px-[8px] py-[2px] relative";
+    ? "content-stretch flex flex-1 flex-col gap-[8px] h-full items-start min-h-0 min-w-0 px-[16px] py-[8px] relative"
+    : "content-stretch flex flex-1 flex-col gap-[6px] items-start min-h-0 min-w-0 pl-0 pr-0 py-[2px] relative";
   const nameClass = isDesktop
     ? "flex flex-col font-sans font-medium justify-center relative shrink-0 text-[#202124] text-[24px] w-full"
-    : "flex flex-col font-sans font-bold justify-center relative shrink-0 text-[#202124] text-[24px] w-full";
+    : "flex w-full min-w-0 flex-col justify-center font-sans text-[20px] font-bold text-[#202124] sm:text-[24px]";
   const roleClass = isDesktop
     ? "flex flex-col font-sans font-normal justify-center relative shrink-0 text-[#202124] text-[20px] w-full"
     : "flex flex-col font-sans font-medium justify-center relative shrink-0 text-[#202124] text-[16px] w-full";
@@ -157,12 +157,16 @@ export function LandingTestimonialSlider({
         >
           <div
             className="flex h-full transition-transform duration-400 ease-out"
-            style={{ transform: `translateX(-${index * 100}%)` }}
+            style={{
+              width: `${total * 100}%`,
+              transform: `translateX(-${(100 / total) * index}%)`,
+            }}
           >
             {data.map((item) => (
               <div
                 key={`${item.name}-${item.role}`}
                 className={slideClass}
+                style={{ width: `${100 / total}%` }}
               >
                 <div className={avatarClass}>
                   <img

@@ -3,6 +3,7 @@ import { LandingHowWeWorkSection } from "@/features/landing/components/landing-e
 import { TrustBandSection } from "@/shared/components/trust-band-section";
 import { TypewriterLoop } from "@/shared/components/typewriter-loop";
 import { LandingTestimonialSlider } from "@/features/landing/components/testimonial-slider";
+import { AutoplayVideo } from "@/shared/components/autoplay-video";
 import Link from "next/link";
 
 const imgImage12 = "/assets/asset-015.png";
@@ -72,13 +73,8 @@ export default function Component1470WDefault() {
           <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-full" data-node-id="76:6993">
             <div className="content-stretch flex flex-col items-center justify-center overflow-clip py-[40px] relative rounded-[8px] shrink-0 w-full" data-name="Container" data-node-id="76:6965">
               <div className="content-stretch flex flex-col h-[480px] items-start justify-center overflow-clip relative shrink-0 w-[1310px]" data-name="6981490c51c1e151d4cb9219%2F69839112fecdf86b71895059_developers-gradient_mp4.mp4" data-node-id="76:6966">
-                <video
-                  aria-hidden
-                  autoPlay
+                <AutoplayVideo
                   className="pointer-events-none absolute inset-0 z-0 size-full object-cover"
-                  loop
-                  muted
-                  playsInline
                   src={heroVideoSrc}
                 />
                 <div aria-hidden="true" className="absolute inset-0 pointer-events-none z-[2]">
